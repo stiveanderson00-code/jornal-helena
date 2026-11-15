@@ -1,6 +1,6 @@
 [
   {
-    "titulo": "Zona da Mata tem previsão de tempo instável nesta semana - veja previsão para Viçosa",
+    "titulo": "Zona da Mata tem previsão de tempo instável nesta semana - veja previsão para São João Nepomuceno",
     "link": "https://g1.globo.com/mg/zona-da-mata/",
     "resumo": "Inmet alerta para pancadas de chuva isoladas em toda a região. Temperatura entre 18 e 29 graus.",
     "fonte": "G1 Zona da Mata",
@@ -208,27 +208,67 @@
     "categoria": "Zona da Mata"
   },
   {
-    "titulo": "Vagas de emprego em Rio Pomba: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Rio+Pomba+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Rio Pomba e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Juiz de Fora: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Juiz+de+Fora+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Juiz de Fora e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Rio Pomba",
+    "cidade": "Juiz de Fora",
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Leopoldina: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Leopoldina+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Leopoldina e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em São João Nepomuceno: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+São+João+Nepomuceno+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de São João Nepomuceno e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Leopoldina",
+    "cidade": "São João Nepomuceno",
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Manhuaçu: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Manhuaçu+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Manhuaçu e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Cataguases: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Cataguases+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Cataguases e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Manhuaçu",
+    "cidade": "Cataguases",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Guarani: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Guarani+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Guarani e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Guarani",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Ubá: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Ubá+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Ubá e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Ubá",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Teixeiras: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Teixeiras+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Teixeiras e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Teixeiras",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Visconde do Rio Branco: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Visconde+do+Rio+Branco+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Visconde do Rio Branco e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Visconde do Rio Branco",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Recreio: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Recreio+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Recreio e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Recreio",
     "categoria": "Vagas"
   },
   {
@@ -245,46 +285,6 @@
     "resumo": "Oportunidades em supermercados, lojas e prefeituras de Ubá e região. Veja como se candidatar.",
     "fonte": "Vagas",
     "cidade": "Ubá",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Visconde do Rio Branco: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Visconde+do+Rio+Branco+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Visconde do Rio Branco e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Visconde do Rio Branco",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Tocantins: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Tocantins+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Tocantins e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Tocantins",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Astolfo Dutra: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Astolfo+Dutra+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Astolfo Dutra e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Astolfo Dutra",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Santos Dumont: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Santos+Dumont+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Santos Dumont e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Santos Dumont",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Além Paraíba: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Além+Paraíba+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Além Paraíba e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Além Paraíba",
     "categoria": "Vagas"
   },
   {
