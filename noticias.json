@@ -1,6 +1,6 @@
 [
   {
-    "titulo": "Zona da Mata tem previsão de tempo instável nesta semana - veja previsão para Miraí",
+    "titulo": "Zona da Mata tem previsão de tempo instável nesta semana - veja previsão para Guarani",
     "link": "https://g1.globo.com/mg/zona-da-mata/",
     "resumo": "Inmet alerta para pancadas de chuva isoladas em toda a região. Temperatura entre 18 e 29 graus.",
     "fonte": "G1 Zona da Mata",
@@ -208,38 +208,6 @@
     "categoria": "Zona da Mata"
   },
   {
-    "titulo": "Vagas de emprego em Teixeiras: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Teixeiras+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Teixeiras e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Teixeiras",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Ubá: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Ubá+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Ubá e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Ubá",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Santos Dumont: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Santos+Dumont+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Santos Dumont e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Santos Dumont",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Juiz de Fora: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Juiz+de+Fora+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Juiz de Fora e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Juiz de Fora",
-    "categoria": "Vagas"
-  },
-  {
     "titulo": "Vagas de emprego em Astolfo Dutra: confira oportunidades abertas hoje",
     "link": "https://www.google.com/search?q=vagas+emprego+Astolfo+Dutra+MG",
     "resumo": "Oportunidades em supermercados, lojas e prefeituras de Astolfo Dutra e região. Veja como se candidatar.",
@@ -248,19 +216,27 @@
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Viçosa: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Viçosa+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Viçosa e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Rio Pomba: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Rio+Pomba+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Rio Pomba e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Viçosa",
+    "cidade": "Rio Pomba",
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Cataguases: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Cataguases+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Cataguases e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Manhuaçu: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Manhuaçu+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Manhuaçu e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Cataguases",
+    "cidade": "Manhuaçu",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Muriaé: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Muriaé+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Muriaé e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Muriaé",
     "categoria": "Vagas"
   },
   {
@@ -280,11 +256,35 @@
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Laranjal: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Laranjal+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Laranjal e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Teixeiras: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Teixeiras+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Teixeiras e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Laranjal",
+    "cidade": "Teixeiras",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Coimbra: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Coimbra+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Coimbra e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Coimbra",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Guarani: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Guarani+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Guarani e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Guarani",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Pirapetinga: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Pirapetinga+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Pirapetinga e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Pirapetinga",
     "categoria": "Vagas"
   },
   {
