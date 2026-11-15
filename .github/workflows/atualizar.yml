@@ -1,0 +1,27 @@
+name: Atualizar Noticias
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Instalar dependencias
+        run: pip install requests beautifulsoup4 feedparser
+      - name: Rodar script
+        run: python atualizar.py
+      - name: Salvar mudancas
+        run: |
+          git config --local user.email "bot@jornal-helena.com"
+          git config --local user.name "Bot Helena"
+          git add noticias.json
+          git diff --staged --quiet || git commit -m "Atualiza noticias automatico"
+          git push
