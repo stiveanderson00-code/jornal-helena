@@ -1,6 +1,6 @@
 {
- "atualizado_em": "2026-11-15T09:34:01+00:00",
- "ultimo_bloco": 0,
+ "atualizado_em": "2026-11-15T09:55:45+00:00",
+ "ultimo_bloco": 1,
  "cidades": [
   "Juiz de Fora",
   "Ubá",
@@ -140,126 +140,6 @@
   }
  ],
  "itens": [
-  {
-   "tipo": "nacional",
-   "orgao": "Câmara dos Deputados",
-   "titulo": "[Exemplo] Manchete 1 de Câmara dos Deputados",
-   "fonte": "Câmara dos Deputados",
-   "data": "2026-11-15T09:19:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://camara.leg.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Câmara dos Deputados",
-   "titulo": "[Exemplo] Manchete 2 de Câmara dos Deputados",
-   "fonte": "Câmara dos Deputados",
-   "data": "2026-11-15T08:39:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://camara.leg.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Senado Federal",
-   "titulo": "[Exemplo] Manchete 1 de Senado Federal",
-   "fonte": "Senado Federal",
-   "data": "2026-11-15T09:13:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://senado.leg.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Senado Federal",
-   "titulo": "[Exemplo] Manchete 2 de Senado Federal",
-   "fonte": "Senado Federal",
-   "data": "2026-11-15T08:33:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://senado.leg.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "STF",
-   "titulo": "[Exemplo] Manchete 1 de STF",
-   "fonte": "STF",
-   "data": "2026-11-15T09:07:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://stf.jus.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "STF",
-   "titulo": "[Exemplo] Manchete 2 de STF",
-   "fonte": "STF",
-   "data": "2026-11-15T08:27:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://stf.jus.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "TSE",
-   "titulo": "[Exemplo] Manchete 1 de TSE",
-   "fonte": "TSE",
-   "data": "2026-11-15T09:01:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://tse.jus.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "TSE",
-   "titulo": "[Exemplo] Manchete 2 de TSE",
-   "fonte": "TSE",
-   "data": "2026-11-15T08:21:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://tse.jus.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Itamaraty",
-   "titulo": "[Exemplo] Manchete 1 de Itamaraty",
-   "fonte": "Itamaraty",
-   "data": "2026-11-15T08:55:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://gov.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Itamaraty",
-   "titulo": "[Exemplo] Manchete 2 de Itamaraty",
-   "fonte": "Itamaraty",
-   "data": "2026-11-15T08:15:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://gov.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Agência Brasil",
-   "titulo": "[Exemplo] Manchete 1 de Agência Brasil",
-   "fonte": "Agência Brasil",
-   "data": "2026-11-15T08:49:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://agenciabrasil.ebc.com.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "nacional",
-   "orgao": "Agência Brasil",
-   "titulo": "[Exemplo] Manchete 2 de Agência Brasil",
-   "fonte": "Agência Brasil",
-   "data": "2026-11-15T08:09:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://agenciabrasil.ebc.com.br/",
-   "exemplo": true
-  },
   {
    "tipo": "cidade",
    "cidade": "Juiz de Fora",
@@ -468,106 +348,6 @@
    "data": "2026-11-15T08:32:01+00:00",
    "data_coleta": "2026-11-15T09:34:01+00:00",
    "link": "https://www.vagas.com.br/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Viçosa",
-   "titulo": "[Exemplo] Notícia 1 sobre Viçosa",
-   "fonte": "Tribuna de Minas",
-   "data": "2026-11-15T09:04:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Viçosa",
-   "titulo": "[Exemplo] Notícia 2 sobre Viçosa",
-   "fonte": "Estado de Minas",
-   "data": "2026-11-15T08:19:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Barbacena",
-   "titulo": "[Exemplo] Notícia 1 sobre Barbacena",
-   "fonte": "Estado de Minas",
-   "data": "2026-11-15T09:00:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Barbacena",
-   "titulo": "[Exemplo] Notícia 2 sobre Barbacena",
-   "fonte": "Rádio Cataguases",
-   "data": "2026-11-15T08:15:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "São João del Rei",
-   "titulo": "[Exemplo] Notícia 1 sobre São João del Rei",
-   "fonte": "Rádio Cataguases",
-   "data": "2026-11-15T08:56:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "São João del Rei",
-   "titulo": "[Exemplo] Notícia 2 sobre São João del Rei",
-   "fonte": "G1 Zona da Mata",
-   "data": "2026-11-15T08:11:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Conselheiro Lafaiete",
-   "titulo": "[Exemplo] Notícia 1 sobre Conselheiro Lafaiete",
-   "fonte": "G1 Zona da Mata",
-   "data": "2026-11-15T08:52:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Conselheiro Lafaiete",
-   "titulo": "[Exemplo] Notícia 2 sobre Conselheiro Lafaiete",
-   "fonte": "Tribuna de Minas",
-   "data": "2026-11-15T08:07:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Santos Dumont",
-   "titulo": "[Exemplo] Notícia 1 sobre Santos Dumont",
-   "fonte": "Tribuna de Minas",
-   "data": "2026-11-15T08:48:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
-   "exemplo": true
-  },
-  {
-   "tipo": "cidade",
-   "cidade": "Santos Dumont",
-   "titulo": "[Exemplo] Notícia 2 sobre Santos Dumont",
-   "fonte": "Estado de Minas",
-   "data": "2026-11-15T08:03:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://g1.globo.com/mg/zona-da-mata/",
    "exemplo": true
   },
   {
@@ -872,201 +652,6 @@
   },
   {
    "tipo": "vaga",
-   "cidade": "Viçosa",
-   "cargo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "titulo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "fonte": "Indeed",
-   "data": "2026-11-15T09:14:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Viçosa",
-   "cargo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "titulo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "fonte": "Gupy",
-   "data": "2026-11-15T08:44:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Viçosa",
-   "cargo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "titulo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "fonte": "Gupy",
-   "data": "2026-11-15T09:11:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Ubá"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Barbacena",
-   "cargo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "titulo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "fonte": "Indeed",
-   "data": "2026-11-15T09:14:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Barbacena",
-   "cargo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "titulo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "fonte": "Gupy",
-   "data": "2026-11-15T08:44:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Barbacena",
-   "cargo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "titulo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "fonte": "Gupy",
-   "data": "2026-11-15T09:11:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Ubá"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "São João del Rei",
-   "cargo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "titulo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "fonte": "Indeed",
-   "data": "2026-11-15T09:14:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "São João del Rei",
-   "cargo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "titulo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "fonte": "Gupy",
-   "data": "2026-11-15T08:44:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "São João del Rei",
-   "cargo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "titulo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "fonte": "Gupy",
-   "data": "2026-11-15T09:11:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Ubá"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Conselheiro Lafaiete",
-   "cargo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "titulo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "fonte": "Indeed",
-   "data": "2026-11-15T09:14:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Conselheiro Lafaiete",
-   "cargo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "titulo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "fonte": "Gupy",
-   "data": "2026-11-15T08:44:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Conselheiro Lafaiete",
-   "cargo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "titulo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "fonte": "Gupy",
-   "data": "2026-11-15T09:11:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Ubá"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Santos Dumont",
-   "cargo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "titulo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
-   "fonte": "Indeed",
-   "data": "2026-11-15T09:14:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Santos Dumont",
-   "cargo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "titulo": "[Exemplo] Vendedor(a) de loja em Juiz de Fora",
-   "fonte": "Gupy",
-   "data": "2026-11-15T08:44:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Juiz de Fora"
-  },
-  {
-   "tipo": "vaga",
-   "cidade": "Santos Dumont",
-   "cargo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "titulo": "[Exemplo] Auxiliar administrativo em Ubá",
-   "fonte": "Gupy",
-   "data": "2026-11-15T09:11:01+00:00",
-   "data_coleta": "2026-11-15T09:34:01+00:00",
-   "link": "https://www.vagas.com.br/",
-   "exemplo": true,
-   "regiao": true,
-   "cidade_origem": "Ubá"
-  },
-  {
-   "tipo": "vaga",
    "cidade": "Visconde do Rio Branco",
    "cargo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
    "titulo": "[Exemplo] Auxiliar administrativo em Juiz de Fora",
@@ -1649,6 +1234,751 @@
    "exemplo": true,
    "regiao": true,
    "cidade_origem": "Ubá"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Câmara dos Deputados",
+   "titulo": "Comissão aprova criação de data para valorizar mulheres que trabalham em setores de infraestrutura",
+   "fonte": "Câmara dos Deputados",
+   "data": "2026-11-13T21:15:00+00:00",
+   "data_coleta": "2026-11-15T09:54:52+00:00",
+   "link": "https://www.camara.leg.br/noticias/1319435-comissao-aprova-criacao-de-data-para-valorizar-mulheres-que-trabalham-em-setores-de-infraestrutura"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Câmara dos Deputados",
+   "titulo": "Comissão aprova proposta que transforma em lei a Política para a Primeira Infância",
+   "fonte": "Câmara dos Deputados",
+   "data": "2026-11-13T20:34:00+00:00",
+   "data_coleta": "2026-11-15T09:54:52+00:00",
+   "link": "https://www.camara.leg.br/noticias/1319429-comissao-aprova-proposta-que-transforma-em-lei-a-politica-para-a-primeira-infancia"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Câmara dos Deputados",
+   "titulo": "Comissão aprova proposta para uso de títulos em concursos de PMs e bombeiros",
+   "fonte": "Câmara dos Deputados",
+   "data": "2026-11-13T20:01:00+00:00",
+   "data_coleta": "2026-11-15T09:54:52+00:00",
+   "link": "https://www.camara.leg.br/noticias/1319294-comissao-aprova-proposta-para-uso-de-titulos-em-concursos-de-pms-e-bombeiros"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Câmara dos Deputados",
+   "titulo": "Comissão aprova proposta que aumenta penas para saque de cargas após acidentes de trânsito",
+   "fonte": "Câmara dos Deputados",
+   "data": "2026-11-13T19:33:00+00:00",
+   "data_coleta": "2026-11-15T09:54:52+00:00",
+   "link": "https://www.camara.leg.br/noticias/1319386-comissao-aprova-proposta-que-aumenta-penas-para-saque-de-cargas-apos-acidentes-de-transito"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Câmara dos Deputados",
+   "titulo": "Comissão aprova aumento de pena para quem usar inocente para dissimular tráfico de drogas",
+   "fonte": "Câmara dos Deputados",
+   "data": "2026-11-13T18:44:00+00:00",
+   "data_coleta": "2026-11-15T09:54:52+00:00",
+   "link": "https://www.camara.leg.br/noticias/1319417-comissao-aprova-aumento-de-pena-para-quem-usar-inocente-para-dissimular-trafico-de-drogas"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Senado Federal",
+   "titulo": "Senadoras acompanham investigação de crianças desaparecidas no Maranhão",
+   "fonte": "Senado Federal",
+   "data": "2026-11-13T21:17:31+00:00",
+   "data_coleta": "2026-11-15T09:54:55+00:00",
+   "link": "https://www12.senado.leg.br/noticias/materias/2026/11/13/senadoras-acompanham-investigacao-sobre-criancas-desaparecidas-no-maranhao"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Senado Federal",
+   "titulo": "Senado tem o maior percentual já registrado de candidatos negros eleitos",
+   "fonte": "Senado Federal",
+   "data": "2026-11-13T20:29:52+00:00",
+   "data_coleta": "2026-11-15T09:54:55+00:00",
+   "link": "https://www12.senado.leg.br/noticias/materias/2026/11/13/senado-tem-o-maior-percentual-ja-registrado-de-candidatos-negros-eleitos"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Senado Federal",
+   "titulo": "Senado celebra Dia da Consciência Negra em sessão especial na segunda-feira",
+   "fonte": "Senado Federal",
+   "data": "2026-11-13T19:40:43+00:00",
+   "data_coleta": "2026-11-15T09:54:55+00:00",
+   "link": "https://www12.senado.leg.br/noticias/materias/2026/11/13/senado-celebra-dia-da-consciencia-negra-em-sessao-especial-na-segunda-feira"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Senado Federal",
+   "titulo": "CAE: ministro da Fazenda debate alíquota da CBS na terça-feira",
+   "fonte": "Senado Federal",
+   "data": "2026-11-13T19:02:25+00:00",
+   "data_coleta": "2026-11-15T09:54:55+00:00",
+   "link": "https://www12.senado.leg.br/noticias/materias/2026/11/13/cae-ministro-da-fazenda-debate-aliquota-da-cbs-na-terca-feira"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Senado Federal",
+   "titulo": "Para onde vai a legislação trabalhista?",
+   "fonte": "Senado Federal",
+   "data": "2026-11-13T18:48:00+00:00",
+   "data_coleta": "2026-11-15T09:54:55+00:00",
+   "link": "https://www12.senado.leg.br/noticias/infomaterias/2026/11/para-onde-vai-a-legislacao-trabalhista"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "STF",
+   "titulo": "Audiência pública sobre Lei de Alienação Parental",
+   "fonte": "STF",
+   "data": "2026-11-10T20:11:26+00:00",
+   "data_coleta": "2026-11-15T09:54:59+00:00",
+   "link": "https://noticias.stf.jus.br/audiencia-publica-alienacao-parental/"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "STF",
+   "titulo": "Página da Ouvidoria do STF",
+   "fonte": "STF",
+   "data": "2026-10-05T22:45:00+00:00",
+   "data_coleta": "2026-11-15T09:54:59+00:00",
+   "link": "https://noticias.stf.jus.br/pagina-da-ouvidoria-do-stf/"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "STF",
+   "titulo": "Série ‘STF Dados”",
+   "fonte": "STF",
+   "data": "2026-10-05T22:34:17+00:00",
+   "data_coleta": "2026-11-15T09:54:59+00:00",
+   "link": "https://noticias.stf.jus.br/serie-stf-dados/"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "STF",
+   "titulo": "Confira as matérias especiais da série ‘STF Dados’",
+   "fonte": "STF",
+   "data": "2026-10-05T22:32:00+00:00",
+   "data_coleta": "2026-11-15T09:54:59+00:00",
+   "link": "https://noticias.stf.jus.br/confira-as-materias-especiais-da-serie-stf-dados/"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "STF",
+   "titulo": "Supremo rejeita ação sobre auxílio-refeição pago a servidores gaúchos no período de férias",
+   "fonte": "STF",
+   "data": "2026-08-26T19:54:27+00:00",
+   "data_coleta": "2026-11-15T09:54:59+00:00",
+   "link": "https://noticias.stf.jus.br/teste/"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "TSE",
+   "titulo": "Clica e Confirma explica como funciona a prestação de contas das campanhas eleitorais - Tribunal Superior Eleitoral",
+   "fonte": "TSE",
+   "data": "2026-11-14T01:08:00+00:00",
+   "data_coleta": "2026-11-15T09:55:04+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUGxYZEdiNFJsQ0VXSjNRb29nYjk5T2N1UWxMYUFoOTNNX1o4NUM1UUlsSU91OF9EUDFjXzdxNDN1bTFyYWFsQ1pBZUZKRjF6dmVSQjdmaDJJcThMSm1RbTFhaWJGRGFVdklHWHVFZXNGdWs2UUp5QVdRM0VhQmpDMWE4SS1NQXJNdDdacUc5Rk50QTJEbXZ1aGJEbkVjMWRLb1RpMktvMXE5R2RPTlp1RjZWam42RHJjemhXTDBfVzR0Y1BadGMzUk1OZmZKSUFja1hwRFotcHpqU0FPQ1E?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "TSE",
+   "titulo": "Candidatos e partidos que disputaram o 2º turno têm até sábado (14) para prestar contas à Justiça Eleitoral - Tribunal Superior Eleitoral",
+   "fonte": "TSE",
+   "data": "2026-11-13T22:48:00+00:00",
+   "data_coleta": "2026-11-15T09:55:04+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQM2szdmZJcVZsUmlCcVprcTlsbHF3Y0NoWWVKbURGSHU0UHg5aXhFVG9BRkNDWW9yR0Y3d0pEbHRKOFdSb0VfYTQzdjdISF9tS3pGVWJFWlYzZF9BMG55Tk41eEZ1YkY4T0hDLWEyYkJBR0tHVXdVVFpSYzFzRXJpbU1tZ0ZIVzRoUS1ON0ZQdGlRRUR1X05RcXo3NENLNzBFVGpLQ0hHNnU0WmZLMUN5WWZxc0hJeHl4Qzh5NVA2ZUp5S3VraGh3TVFLSjQzaUFtRzZ1dTNFVDNBbEd0cXg5eG5KbkUwd3RDOU5PSEViTnBpX2NMYnc?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "TSE",
+   "titulo": "Eleições suplementares: oito cidades voltam às urnas em dezembro - Tribunal Superior Eleitoral",
+   "fonte": "TSE",
+   "data": "2026-11-13T21:29:00+00:00",
+   "data_coleta": "2026-11-15T09:55:04+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQenRHcEtHbk40bU1pd3htRnU0MlJzUFBEdzZGY3Fic0tidDY4cDBQNElLNkRGbFA2WC1Jd0E1dzg1R2dJYzVjLVdrbThzMkk2VnJQRTJjSHJfdVFLN1FfajZzYkVvRW0wMTJ2c1I3QWpWYk4xUXdwQ25neGh1NjFUUEhuQVlsMUZyVFFPdUJucFFmMVFwNk4tdW1iMFEtUHljYWRhT1cxWkZmUDRsWURsNXJScHpoVDJWbFE?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "TSE",
+   "titulo": "Consciência Negra: proporção de pessoas negras eleitas para o Senado é a maior desde 2014 - Tribunal Superior Eleitoral",
+   "fonte": "TSE",
+   "data": "2026-11-12T23:34:00+00:00",
+   "data_coleta": "2026-11-15T09:55:04+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQUWhJSlRnNkdsS0gwMkQwZlpWZ3lJdDdUU1FWeVYzaHJ3ZGI4Z0NzeHJiMjNEVHVzUWU1RjJtUmduRHJoNzdoeEN2SElSb1lUMmlFNFZXUVdhNFJWX2NiSnFxTFJDUGdORmxuX09rN0syRWNBZHlKZUJJTzRWZFZ3cEpLaDRaRlFxSU4xYjA3UkYzUEtnREtUeFNCdjRJM04ydVlfVWEtZC0zZmdPTVBHdmplNGpkYzBNT09vM29vekZ6WmlCUGFkc0wwM01VbmdkYS1zeEI5S1VnaTVBa3VV?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "TSE",
+   "titulo": "Mais mulheres na política: número de candidatas eleitas em 2026 cresceu 21% em relação a 2022 - Tribunal Superior Eleitoral",
+   "fonte": "TSE",
+   "data": "2026-11-12T22:59:00+00:00",
+   "data_coleta": "2026-11-15T09:55:04+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWElIeVlWbzZ5ajZUbVpra1hRd28wVEVRYTRIa3NoaC1zcFJWY19Zc2kxVmtWOWpublhhdmd0dFZ2QVZ5ZlU2czRLMDFfcEczY241a1NuZWJTN3lBUjZrNHdrN3BlTFkwRE54cFZUc3FoTWJqWG53U2xrbmVHUVczWXczbllEMGFweGUtSmwzZE9aZk85dnRHMENKMjFlZ3RvVXJKNnU3MF8xS21FeHMweWpDVlk1cGgybUZaM3lzbzZoV3hzOTViTEQxQ2dkbl9VTkhuVXcwVlFNSjVSS1RfcmFIRQ?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Itamaraty",
+   "titulo": "Atos adotados por ocasião da Visita de Estado do Presidente Luiz Inácio Lula da Silva às Filipinas - Manila, 14 de novembro de 2026 - GOV.BR",
+   "fonte": "Itamaraty",
+   "data": "2026-11-14T14:08:00+00:00",
+   "data_coleta": "2026-11-15T09:55:09+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNOENvLWNQR1RqWlZHSTlaeTJ5OHlIWlhfXzVyanA4bUlLRERhdHlqNjJmdE1EU2l5ODhJR3VBa3g1emt3Zkk4LXJlcFNTU1J0LWpSQjY4ZmQwUHhBQzVEU1dMX3RiaTI3NGpXSnFkaXdnc3Y1Q1BVVnY1ZTBNdjFUQTE1cWJyOC1zOVFqMDR5TjRMQVVwLWZjU0psVzFfVlQtVTNpR1JzOUxZQVAzVFNZZVowVHY2RXdRWWNGN0xLOVZnczcwd0dqUlpGSU1WNWk4LVNMTkpZMGVzcU82TVlTd3NKTU00Tm9hdkM2QXRjb3g5TkpIUXg5MlVxbHpBazBqaVd6MWZOejZFZzgtaHBSb0YtQTc0Znd3VE8yazkxMEhGZ3F1TUlIeWtn?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Itamaraty",
+   "titulo": "Sepultamento do corpo de Walid Khalid Abdalla Ahmad, cidadão brasileiro morto em prisão israelense - GOV.BR",
+   "fonte": "Itamaraty",
+   "data": "2026-11-13T23:17:57+00:00",
+   "data_coleta": "2026-11-15T09:55:09+00:00",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOZU1uZmgwVUktR2ZTZDVaTk9Rak1IS2xGeUd3b1ZWbkExNkxQVldlY09JeFp5elhRR0Vla0JnZW0yOUtkNHFmM0hKWXBBbVlhSWhNQ0xxaU1OeWI3N3N6eXJrT1JucVZLaXQzb1dwUXVPUTdNMHdNTVVjRHVoZTFOcV9CYUhuNEdpVTZIYzU3LXQwNmNnbDJoVDBnaGpxd3BrUnhVVXBiNHhCX1pYUWN4YjlXWHVnaXBBWjI0Z3VRcm4tOEV3SV9oUUszMHF2MERnSUMza2xvaTdRSk1aamdMMFJkNzFBS1BieFdRMkE5bVhzQzhwTVUwOVVKakVqYnRx?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Itamaraty",
+   "titulo": "Cúpula do Mercosul - Montevidéu, 3 e 4 de dezembro – credenciamento de imprensa - GOV.BR",
+   "fonte": "Itamaraty",
+   "data": "2026-11-12T13:42:30+00:00",
+   "data_coleta": "2026-11-15T09:55:09+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQT2NlMkZmVTg1d2twdDNVVkNtWS15VzlMTHRBeURxUTF6UnB3ZnB6QURXSDZjZnhuaXRKdUpsTzBXV0R3dzBmVWRLZkRpNnJoeHNSTkgxRkduNlVoLWY5cXBEZ2V4TU1rSERqTVFpMU80Q0w2U2RscjIxQWQ4bHZnNEtFZVM2YUQ1ck9JUWg4eEdLQ04tY3liY205c0xkZkhwbW1TcF9Wd1g4c21jRjFXSm84akMwS2NvVE1mcjZOeDdKRXFmQUFDZnhINlZBT3k3a09HRTZURHhnWHJCa19Tc2doODl2dE1HWnc?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Itamaraty",
+   "titulo": "Viagem do Presidente Luiz Inácio Lula da Silva às Filipinas, por ocasião da 49ª Reunião de Cúpula da ASEAN - Telefones celulares - GOV.BR",
+   "fonte": "Itamaraty",
+   "data": "2026-11-12T01:38:17+00:00",
+   "data_coleta": "2026-11-15T09:55:09+00:00",
+   "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOT05XLUZ6UXFWeDMwdWZxTTdVM3RwQ0dXd3p0V0g5WV9lUFBsS1l0NDZmMHJ4UXZNc0U1QnJBUzZOeTVJOGNRUllvMDJqZlV1MjlYUEYybmhrcnZFdWl4ckwyOG5iR3FJZXJ0cGhPMmJnMnNoV04wS2FCajJQWnBNcHAyZDVhZjlJRlVqMlVUVGh5YkdSOHAtQ1JwSHhIVzJORU8yYVBBR3pmc3oxUzdad3hJN3NXT2hVNk9OWlh4SFBmM1JsOUxORjByb3Q3TUNWdzdZWEZlUS1wRGRoaGRGdzctem41NFZaR25DLW1keWZIcnNYYjV3R3NSQWJPQUMyUEpEcjVzWWFaa1Z5akhxUzhKWHRLOTI2RFg0Z1FqbmZSdTlpdnEw?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Itamaraty",
+   "titulo": "Repatriação de remanescentes de pessoas escravizadas retirados do Brasil no século XIX - Nota conjunta MRE/MDHC - Governo Federal",
+   "fonte": "Itamaraty",
+   "data": "2026-11-11T11:16:45+00:00",
+   "data_coleta": "2026-11-15T09:55:09+00:00",
+   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNUGRDejZ1em9rR3JiNGFXd0Vlb2pGR1h2ZmlySGE4RnhzVEYzdWFZYVJlVjhvWV9WeHF5ZGZCSUtiUW5lM1pYREZiY0ItX2kzY1ljR0x2YmpRYXdISnlzQjN4WHlTMUdjVlIzQmxpaTBRNUd6a2I3U2doYVplZWp0Z2hvcWM3ckx3Z2prUXpZUFI1T3ZhUWJlY29JemtrMkFxQzFxU1BSbmcxdlZpNUh1cmVzZnUwclBOWm1SV2FVcDlSclp3RERoQ2VKUm9hWW1yLWhnNW5KdFdUbVZ1V01CWElBWW9SeXdRSEF2cGc2Qy1ZVnRZaHBZOHV1THk5YXhSeDVkR1ZaM2VkR24tUC1lYg?oc=5"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Agência Brasil",
+   "titulo": "Novorizontino conquista a Série B e sobe junto com o Juventude",
+   "fonte": "Agência Brasil",
+   "data": "2026-11-14T22:02:00+00:00",
+   "data_coleta": "2026-11-15T09:55:13+00:00",
+   "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/novorizontino-conquista-serie-b-e-sobe-junto-com-o-juventude"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Agência Brasil",
+   "titulo": "Brasil e Filipinas assinam acordos sobre agro e livre concorrência",
+   "fonte": "Agência Brasil",
+   "data": "2026-11-14T21:53:00+00:00",
+   "data_coleta": "2026-11-15T09:55:13+00:00",
+   "link": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/brasil-e-filipinas-assinam-acordos-sobre-agro-e-livre-concorrencia"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Agência Brasil",
+   "titulo": "Falha aérea nos EUA cancela sete voos e atrasa outros 14 no Brasil",
+   "fonte": "Agência Brasil",
+   "data": "2026-11-14T21:43:00+00:00",
+   "data_coleta": "2026-11-15T09:55:13+00:00",
+   "link": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/falha-aerea-nos-eua-cancela-sete-voos-e-atrasa-outros-14-no-brasil"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Agência Brasil",
+   "titulo": "Circuito Cultural começa no Rio com celebração da Consciência Negra",
+   "fonte": "Agência Brasil",
+   "data": "2026-11-14T21:26:00+00:00",
+   "data_coleta": "2026-11-15T09:55:13+00:00",
+   "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/circuito-cultural-comeca-no-rio-com-celebracao-da-consciencia-negra"
+  },
+  {
+   "tipo": "nacional",
+   "orgao": "Agência Brasil",
+   "titulo": "REC'n'Play: rede social sem território não vira voto, diz deputado",
+   "fonte": "Agência Brasil",
+   "data": "2026-11-14T20:55:00+00:00",
+   "data_coleta": "2026-11-15T09:55:13+00:00",
+   "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/recnplay-rede-social-sem-territorio-nao-vira-voto-diz-deputado"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Viçosa",
+   "titulo": "Preço da gasolina em Viçosa (MG) hoje: confira valores desta semana",
+   "fonte": "UOL Economia",
+   "data": "2026-11-14T09:15:46+00:00",
+   "data_coleta": "2026-11-15T09:55:18+00:00",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSUQ2eXQ4QllaVWJ1YUF1ampBYXlBOHNadExZekM5MU5WckdlZ094QWxtUFVTQjZTZW42M1NGanp2Yl85X0VfeDQ2aWRGdVJGYmZxdWd5UldDd3BYU2RUcTZOWjdJS081NS1GaS1yMENEcGpiTXVKRzh0T0NuZ3hEdXYwSTRjdVpEWHZBcml2SUxfTlVoNDBkelBIVUpILXBhOUdaUmVnRnQ1cl9mSEJQMkU1Uy1pc25aVEc1T09oeGh2dFlzLVNr?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Viçosa",
+   "titulo": "Sarna avança na Grande BH, e capital já tem 11 surtos em 2026",
+   "fonte": "TV Sim Brasil",
+   "data": "2026-11-13T01:27:00+00:00",
+   "data_coleta": "2026-11-15T09:55:18+00:00",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOS0kxbzhXVEF4VlltQjJhYmlsajN3R2JscEJIVmtGN0V1ZTRvc1diaXFjNkk3Yno4LVY2NXl0b0p4OFMzeDljNWROaGxjMTdSU3plbzZkY3dlcEtkc1ZoZWhHVEM0aHBWTFdka2pBSkJ3RV8yRXkxZlRtb2NHeGVjWTA0QWVZNG9IN2FUVlhmWDBaZWhQdVg1aGNvM0NMMUdvdVdNTA?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Viçosa",
+   "titulo": "Lula vence a eleição presidencial em Viçosa (MG)",
+   "fonte": "Congresso em Foco",
+   "data": "2026-10-27T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:18+00:00",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdkJzRVJIZnBkZjJiblo0Q0FHR0xxZFhqb3dlS0tQa040V2p3dFltU21DTHN1NXV4ZGZjQXFqdFhkS2EydEdHQlVqYVdCWGZwOUgzRUF6VEcwY2NnT2ZmNXgtV0l5LXUwTlRrVFdoak16cERzMGF6UENNUDI2aWgyMWV0TnZoaVFxX2liNXVtY2p6ZjBYQW9nQXkzRU4?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Viçosa",
+   "titulo": "Viçosa (MG): resultado do local de votação por zonas eleitorais no 2º turno",
+   "fonte": "G1",
+   "data": "2026-10-26T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:18+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPcExJdVZiMzNCWW5Mc2tpNXYzeGE3R1JBM0JuT1RReUo4aE1sM0NuZUw0V2pMelg3ZnJEa2xGaXEtZ2VJTDdycTJQbWVNLXg0YkNoYTBHaWNfeGpLd1VqUU40RWQyQndBUHhJREFZRm10NGVkX2FEVl9WV1phZDlTOUNkcTNJYnYtUVNIN1pJSEdqQ19TX0FPZ0FJTklYaVVjdk1yb3dCcHpidVFwcmNqcVA5MUxPeVBSZDRFR2dzRVNQSlNpZlVvLWM1MnhielJOaW9ERGJmdS04NXFjMnVWWDB30gHwAUFVX3lxTE1VcmttM3dWODJIcHZFc3hwcVQ1TkJDVElQb2VzV2lkUi0wOFpUMHlDTU96LWZRbWotbzVjblJ3dlgzcDByRklQUllnWlk1ZkIyN2VQNW43U3JLR1VqeEZnSlJBQ2VHWG9rY21wLVBneTNleUc2OTM3YVYyaUE3T1VodzhXenNPaV8zMXBvVnhWZnJraFNwb3g0QTNzY2ZVeEVKd0JTQUNhX014T0dmSjM1a3AyVGxKc1A5VXUwYU5ZVzNSM0ZBYVRjZzd6dWlfdmlROEdSN2NqTmtIQW1vZ0NDdTlVcmhVRjFHbklUbXBzTQ?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Viçosa",
+   "titulo": "282ª zona eleitoral de Viçosa (MG): votos por local de votação no 2º turno",
+   "fonte": "G1",
+   "data": "2026-10-26T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:18+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPaVhYajVXTU5nVDc3dHdId2NwWEVlQWJWaG5kRzZCWExpXy1IeVZOakFDRTBiZlZJcm8teE1mRGJqQlVYOFZYV3NVVlZVRHcyNFFaaUZHd19kaDAzNFBpRVA5V2wzR2tvQ3l0c3BsZ1NfdTdSMEhYQUYxVW5oOFNjLThCQ244ZWhDUF9wU29EbDZQRzZPcC1qVWwySXZuWEZwV0Rud3NpbHd0bUZZbzJiRTMta3MwUU9hb1k2YzQyUWQyajlZMEdtb3JHWGRHSnNuWDJYYmlfYS1JZDYxX254SNIB7wFBVV95cUxOVXB4T3ZfR2tvT2EzOEoyamUwUExzVXY2cGgxRGxoaXlSWTkwdHFHMzhMVEg1MUFST0hLLVBMenJSU01namd3bnowMWVHVTVHcGREUmhxeTJibmFfVVVmQl96aWVLQTQ0eVlDa3NKYUw1TkFYZ0NyQU44QzRBc19NTVJhbzMzZDFwa0ZVQUV5T1hFcGhDX1JQQ2hFWnhuWGVvT2R1Z2ZVREFfeVJZckdCcVpNaXk2SXRkRkszM21MRzB2aEFGVjJjOWh1anhLUkpBNm4xMk9pRGg3dy1FU083cUxLcEFBWURGSWwtZEFVYw?oc=5"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Viçosa",
+   "titulo": "Página da Vaga | Analista de Atendimento (Foco em Departamento Pessoal)",
+   "fonte": "Gupy",
+   "data": "2026-11-05T17:01:50+00:00",
+   "data_coleta": "2026-11-15T09:55:21+00:00",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNejRra3JYM0s2VlpUMHlqSDFlVGFaT1BPa2QyLXhxa2lOcmNESlJhUlM1Nm9tV3NtbVNxZkdKNXdiOFVoR2tBdTZfc2lEMFFlTTlzQ1JJNXJRWnh5SU9Ra0c5djRuMmZuN092R3lSNkxVMHdITTNsWlBWeEd6WUF1TW05VnVxZw?oc=5",
+   "cargo": "Página da Vaga | Analista de Atendimento (Foco em Departamento Pessoal)"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Viçosa",
+   "titulo": "Página da Vaga | AUXILIAR ADMINISTRATIVO | AUDITORIA DE FATURAMENTO",
+   "fonte": "Gupy",
+   "data": "2026-11-03T08:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:21+00:00",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaVJtbW1wV04yMWcydTFCLXFWY3pHc2xfdXcwQVVnTUtaM2d4b0dfQ04yZGw3NFJscnh3RjdteFc1SzdkZFpvbFo2Yl9QVTJVZ1lmb1NWMjl6c1dOSUNOaUt2ZlhnOXBrWGprbG04eUdackpRN0tWdThQWWxmYUtNZUNyODR3cTNsY3J1TGE0THluTFl0Q2pjOVQ2V3hfclZzaE92LWtlc0tjYndxUkRXdWFR?oc=5",
+   "cargo": "Página da Vaga | AUXILIAR ADMINISTRATIVO | AUDITORIA DE FATURAMENTO"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Viçosa",
+   "titulo": "Página da Vaga | Auxiliar de Garantia da Qualidade",
+   "fonte": "Operações | Pif Paf Alimentos",
+   "data": "2026-10-22T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:21+00:00",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbWZ5aGNkNXpQMTl6VVlwZ2NwcGpMaHFqSDZDdlI1YUZNVUpEcVlNbnBWZUQ4V1VoSUszYWNpVUZMaHItQnZuLVBEUXphU1dBbzZpaDB4MjFGQUpyMGdmc1ZrcjVDU2t3RTNwVVhUYW8wSU9TYzNDWDkxdHVLeDFGWnFpSkZIUHhlU3I3OU5Waw?oc=5",
+   "cargo": "Página da Vaga | Auxiliar de Garantia da Qualidade"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Viçosa",
+   "titulo": "Página da Vaga | |Inauguração - Renner| Visual Merchandising - Viçosa/MG",
+   "fonte": "Gupy",
+   "data": "2026-10-15T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:21+00:00",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GeDJqNTYwTnJaUFBsOHFDdllidTh1M1YyOTNTOEVKMXoyQ05RMk5OLVctZndBeFZJeXdsdXJ3dnFmTkZMWVh0X1l3cmF3TnNGeEl6S29wT0V2ekx1QkhIdXM5Z19WRUctLU84TzNCWjU1aVpvSEloNWlmY0hvdw?oc=5",
+   "cargo": "Página da Vaga | |Inauguração - Renner| Visual Merchandising - Viçosa/MG"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Viçosa",
+   "titulo": "Página da Vaga | ASSISTENTE ADMINISTRATIVO",
+   "fonte": "Gupy",
+   "data": "2026-10-15T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:21+00:00",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1hYTJHRDRXSlRPeW5yUGhIQkZ4YmpqVm42VWYxaFZoRnpBcXBsbmNfdlh4cVJFLUxvYWUxYnZsSkI4eVBFODBmQkpVVEFiSzJnOEtEdDZ6eXVBQnhWU3l6UGFvZzVUT2lFaXF2cGpFaGR5RVE?oc=5",
+   "cargo": "Página da Vaga | ASSISTENTE ADMINISTRATIVO"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Barbacena",
+   "titulo": "Gasolina em Barbacena (MG) subiu ou caiu nesta semana? Veja preço",
+   "fonte": "UOL Economia",
+   "data": "2026-11-14T09:12:57+00:00",
+   "data_coleta": "2026-11-15T09:55:24+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPb1FnZ05Ba1dGQS1zemI1ZHp6dFdleUg5S0dvYUhWOGJXNU82UjI0YXVCNGItaW9jVjk0R1pWYkk4UWJzSUhvM1hmcE5mUFpjdURTTGliNVVnYlFTVlZ3SDRnMzJPTEJrX2Q5ZlpYM0pQejBuZjBfdjVZTW1mNEZqTWRmeUYxeEY4TWVOVHhRaE91eTlfajd5bUxqR182Y09yaVExejlCMXREWUR0WEN5QTh3R2JkRUdJc0NFbVZmZWU?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Barbacena",
+   "titulo": "IF Sudeste MG abre inscrições para o 3º IFestival de Música em Barbacena",
+   "fonte": "Barbacena Online",
+   "data": "2026-11-13T14:32:33+00:00",
+   "data_coleta": "2026-11-15T09:55:24+00:00",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYWRMdzM2TS1kUE1fcmRxM18tU2FtVDhoM1A2UnJlV1Ewbjl1ZHpfazJSNjRRQm40clJoRHA5Z0FHTVJycjZkcUtjVDJ3VDlJcmdoeGlxZTZDUDlDYnJSREFLbE9meUMzX0FYUTdyb2JTMFVqVWJfQzlaWDkwaVo3dGh0YXBBUUVfS2MyX0NZQUd5Ym5HWXpyeU5iMTNCWHhPUWZTWllVbWtISTdHRFUzQTZ6ZDVwYUhDV0VZb2E2Yw?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Barbacena",
+   "titulo": "Buscas do Gaeco alcançam Policlínica e órgãos municipais em Barbacena",
+   "fonte": "BarbacenaMais",
+   "data": "2026-11-10T17:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:24+00:00",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeG9lWHhSWE1iVWFsM1RyaE4xaXcwMzJOQUhKRUUyTDZuSGt6OTdOYWdfeXJNOHFabG9wUEJDVmF0RlJKejdLTU5HbzJnMWJHLWZRNFdud0RlajFQOEFSVldFUTlSNU1HTFl1WlpORE5hVnF4amxpZXp1ay1Ra3Q1ZnplNE84YlJFWTFLYjJoUWpIdjRKVVN6enR0VWlhcVpLN0RnR2ItNTNXWHBqV0ptdmxnTjE?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Barbacena",
+   "titulo": "Barbacena recebe quatro sessões gratuitas do 21º Festival de Cinema Italiano no Brasil",
+   "fonte": "BarbacenaMais",
+   "data": "2026-11-10T09:15:56+00:00",
+   "data_coleta": "2026-11-15T09:55:24+00:00",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQb2NDV0EyakoyMHllQ1lLeEgySXBjU1lwempDME9ucGlwMG0tNWJWdEJ2V3Z4dkRja0g5M0lxdFpLTmtFbE9MdTh3Q3hsWXNIMVI0TmlUZEhtNWtrTlBqcHYtcGtyS3cwTHhpOVlDSE1fblFjSzM2SmZjc3ZZZ01iRlg1VE1KVFBYa3VtQ1MyQXNUNTYxT2RzZXNrRkkzVDNpR0JaSnp0SlB4U1A0QUdrRnpUYXNSTS1sLUM1RjBTLTdpYkdVbjJzX05CMExONVU?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Barbacena",
+   "titulo": "Programa Acredita chega a Barbacena (MG) e amplia acesso a qualificação e microcrédito para famílias do CadÚnico",
+   "fonte": "www.gov.br",
+   "data": "2026-11-03T01:56:00+00:00",
+   "data_coleta": "2026-11-15T09:55:24+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQY1ZDODBibVhhUE1FOVFPaV9oSTUxcG5kbE5OVmE0anNlNUdVYS1qY2dOcGtyM1RKN01GMnZGa25lQk1qV2ZpaVhMMWRtRHlSU2dnc1haeU5ZZ2lEcm5RZjlEWXZLaFNQcnpINmc3Q1pvX2prZTQ4RE5HVmRLSFZ6a3BIWHg3V0dEVUxPTWVDd3dzblkxOXhzRC1YMTROLXJrYVkxektnYWxmVDd1TzJNNi03TDk0WUpMQkg2Sy1IUjJJbE1sVU1HNHM1OFhobXMxNmRHYktzSnRvOW44OU5mXzNUM3J3aDV2YWo1OVpIVGxqRW9HN1lJZ1pSSExfUkp2dk9nWGd3OTExZEZuSGROaC1mT19LRzdWRjFwbmJ5TDV3c0U?oc=5"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Barbacena",
+   "titulo": "Página da Vaga | Instrutor(a) - Enfermagem | Barbacena",
+   "fonte": "Senac em Minas | Trabalhe Conosco",
+   "data": "2026-11-13T14:32:08+00:00",
+   "data_coleta": "2026-11-15T09:55:27+00:00",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRlZlYUtIcnAzMnR5elJEc25zT3pFSm14bTdsSE9kYUg4VTRZRlpLcjNuZGlJS1JUYl9WSGxZdnlSVnZDVFpXWnJycjMxOGY2TVBCRVJ2Zm1jZjB6aGVRTmtQQ1FsRDBhbWVYV0UybGt0ckRUanRaT2I1VTBDVHdidWpQLXZZcm4zc1Zpb3ZnUkhnYVdWYUxEYVBJR084LVIzQVdBLU1xOUt4N3VETU5ub0ZqYWhCWE5MVE5QTGJXNXRUMUxi?oc=5",
+   "cargo": "Página da Vaga | Instrutor(a) - Enfermagem | Barbacena"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Barbacena",
+   "titulo": "Página da Vaga | AUXILIAR LOGISTICA REVERSA",
+   "fonte": "Gupy",
+   "data": "2026-11-12T20:39:18+00:00",
+   "data_coleta": "2026-11-15T09:55:27+00:00",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU2FxTDE0d1AyRWhyQV9uWGx0SHI3RUMzaEg0QWlublhqM0kzUC1jZVhqVlpfMFZhbXR6OW1yVVg3dzFZZXNKcVFBU0tWVkJ3OVNrcDhSa1g2NkI4M0kwaFM2QUhlVlp6THdwdEpGVXNQSF9PX3FZbmNwV3BoMVVuY0JReGxtZEp3SWVhbkJ1ek9hMDZFZ0oxNVJob194aUJ6ejVGRDZTY3JWRHMw?oc=5",
+   "cargo": "Página da Vaga | AUXILIAR LOGISTICA REVERSA"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Barbacena",
+   "titulo": "Página da Vaga | Atendente de Farmácia - Barbacena",
+   "fonte": "Gupy",
+   "data": "2026-11-05T23:34:36+00:00",
+   "data_coleta": "2026-11-15T09:55:27+00:00",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSEYybDJOdUxvV2VWNllMWjZjVmFpaHBDbWZ1bC1ucGh6cnNPWHhIZGtZQzNQOXpqZ2Y5eVZ0dWhqNVBiQkU4cTIyUkRRREs5aXVEV2NCa1Z1UUpLb0hXaElBc1BTQmhTRDdMc2YyMEpoQWNMQ2Y1bEJnWWhmYnJJeGhnVkE?oc=5",
+   "cargo": "Página da Vaga | Atendente de Farmácia - Barbacena"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Barbacena",
+   "titulo": "Barbacena/MG.",
+   "fonte": "Gupy",
+   "data": "2026-11-05T14:54:40+00:00",
+   "data_coleta": "2026-11-15T09:55:27+00:00",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBVYjl2RUZuVnlUSU5PTHZ2V1lqRy1nMTd0TEJuOHZCQTBXY0NVV2YtMU9mdjdWZ2dLRXhlY1MzUlFaRHBaN1NwblpnelpFNEI5b1hybUpiLUhwTTN3SEJpcFE4ZXNwNmdFc0gyNXdNclhPNnB3YXpPN1RxcmF0UQ?oc=5",
+   "cargo": "Barbacena/MG."
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Barbacena",
+   "titulo": "Página da Vaga | Jovem Aprendiz | Barbacena",
+   "fonte": "Somos Todos Guanabara",
+   "data": "2026-10-20T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:27+00:00",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBVZjJYaUg1d3FZQzNSTVItbHE1M2VxMjF4b2E4cUxJV1B4eFcySGJTUnkwMlJBYlZxdU1FQm1HQVVnRk4wWjJ1WVYxVlFwRDNNbHdremxqS2N2RU9WTHFkUUFXYWtiZGJ6R1hERHlQLU50bXBMa0thUV9OMA?oc=5",
+   "cargo": "Página da Vaga | Jovem Aprendiz | Barbacena"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "São João del Rei",
+   "titulo": "São João del-Rei goleia, elimina Nacional de Muriaé e segue vivo na briga pelo acesso ao Módulo 2 do Mineiro",
+   "fonte": "ge",
+   "data": "2026-11-14T13:45:39+00:00",
+   "data_coleta": "2026-11-15T09:55:31+00:00",
+   "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOQmpreGpTcTJOckdkRWZ2X3lBbXNHWmtJY25VZ25MVFl1dnRaN2hOb0JNSkhFamVQR2tILVFob0JnUERFdjJtaUk4ajlTRWtaZ2gyZVRDSHFWek5FSTh2UWVMSXl4Zl9OQmZGVDV0OHlxaUotZmxtdE9TLTdyQkhzS2o3Wm1Ca1VtajJNODNkdVloY0F5ME1kWTdrazNUYmQ3ajlqM3gxb2Z6bmE3dmpKTktSZXB1eDU1VFpyVmx2Rl9aTkMyRTlVSFpGaHIxcTBBQWhLSTZMVkIwb0NxbzQ5VnM4ei1oU2FnOXJNVkFLQ0V2VmpnYm9Lc1lEc0JhM1lCSl9NNUowMERJRklWNkhWcXU3YzhaN0t6WEHSAagCQVVfeXFMTVowSUc1Y1l3c1dqU1BQM05TWDdNNVhnUlplNzdiTUtoOExMY0c3NXA0U0NtaVFrU3VWalhlenhTUGxVV3hlUjZZX05HR2tKU2VqY2FTV2UwS2xySVpOOElsVmY5RnJTSl9wVDhuX2NaajZURWlEOTJpMS1jMFZWU0g4UXJheTFEU0QtVHAwSjZyM0hQME1BU0JYLXBVSV9JZWpTeC1QMURZeW5nZkhndmw5d2pxcVVSaS1FT3NybXp1LXhiSFNiUEFOTndiWXFXZUhndzM5WTR5cXVKcTY5LVVpTWNPa3dqZmpWLTNpcV9WS2R2aDUwVmUxYkZkRVMzODJvNzh0V2NPcnhxYTB1UVJnMWpOZi1JRXpzZVhMMzA1QUNiNHdWeXI?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "São João del Rei",
+   "titulo": "Gasolina em São João del Rei (MG) subiu ou caiu nesta semana? Veja preço",
+   "fonte": "UOL Economia",
+   "data": "2026-11-14T09:15:08+00:00",
+   "data_coleta": "2026-11-15T09:55:31+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPUlhxNFVoY21QTnZDYVRrdDVZLU1aRFJQSjJTTEtzdFlfY2pmQ0VhTHloa2gyYzhOZWFCbENPU2tnbXJHNjJTVHktSmUxbnhpQUNzbTJoVy04WEE0UjN5SDY2dmVteEREcjdmZGEwMk0ycy1Ic0ptaUlyeFVlRkR4QUc1NWM2SUJKX0luSFZ6azRvNGxCdHFiNnlCdmtDX0Yxa3lWaXJTOTBRTmJGX1RXbnRVdXpDTkhwR0xWRnEzRWZNWFJvb292NXVR?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "São João del Rei",
+   "titulo": "Sete-lagoana Clarice Rodrigues leva espetáculo “Canção da Barbárie” a São João del-Rei",
+   "fonte": "Sete Lagoas .com.br",
+   "data": "2026-11-13T17:03:00+00:00",
+   "data_coleta": "2026-11-15T09:55:31+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORTVkenlvdkF0R2dfaGY0NmhvdGs3U3BPZUloYVNOU0MteHk3ZUx6aGtId2lBUldNSlJJR05GRmE5NEZ3bTFlUDFfV1FWS0dPZ0NLM2I0ZGt5d1ZOTElOekphNmllY3dpOXI0czE5TkJUUkhXSEo0c1hQMElxcG9XUzlTeWw1QjUwcnNIcHdUMDhTakNRdGFlOFlzckdjck9Wc1dOZnVESXg5VWlqMXZXS3g4OHVHWGNJaDdxUFNMbmtrdzc3ZE52Ymg5NVRhZGZtN19qSjBpdWdTVmc?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "São João del Rei",
+   "titulo": "Escola estadual de São João del-Rei transforma interesse dos alunos por tecnologia em Laboratório 3D e amplia oportunidades de aprendizagem",
+   "fonte": "Agência Minas",
+   "data": "2026-11-13T14:54:00+00:00",
+   "data_coleta": "2026-11-15T09:55:31+00:00",
+   "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxNY1ViY2htTEV6Z0U4N3dTejJ2eUlFVFY2QmZ2NGJFaVI2Wkk2eWx2bV85eUdhMUpMTmd3bFJ4VnBJNGRwZUoxOEptMlZ5U3ZuWVN5ODJheU5aOWlNQzA4QWRyb3NyeWtUX0hMZWQ4eUFtVjBZX2tFWkhOSzFuenFmVXV3enlSQkR6NHdTN0gwNW1NSVlPOVEzZV9lTnI4cU1jdzBJcW9xdWxfa0Y0bWJFdFNiZDJoNmJyUEJyNGRjbDFsclNMZHY3RXZ4SmdVOFpVRVcxbW4zUlpPTm9DTnQyRUs4OVFsaTAyLXpOTHR5aFpQVERDbW5ERTF3WVpaalo0eW41VWE3aVRMN1VsSHZkcTIydW4tbTgteXlNT2lB?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "São João del Rei",
+   "titulo": "Concurso GCM São João Del Rei MG: provas em dezembro!",
+   "fonte": "Estratégia Concursos",
+   "data": "2026-11-13T08:10:00+00:00",
+   "data_coleta": "2026-11-15T09:55:31+00:00",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pY2I5Uk5TYlIydlRYRGk1cnJmcThZT0thWDFZc0R4QXUyQzZEN2I4OVJ3SzlZRmhrbERjbkZVcjZEcFdoMEstaGpZSXBOeWlCUDh1SmhDUHJ2QVNGM1NjSlM2N1NIcVpzbjJhRFlBdjdLZmkwRmJXTm10cndtUdIBgwFBVV95cUxNT2lUeUhhSF9GQW9OSjFFalBrYzhHd2h3YU42OG9EZ2hQQmk0QXpReUY4bFJ6REpfQzE3YlRfSFFfWG52MVhPQkdwM2FQU1V4a3Z5dWNqMGdZV3FCWHkya2NFNGRxQTUyMW9qeXpvY3U1V0lieHZuV3BLWkdRb1pWNEhGMA?oc=5"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "São João del Rei",
+   "titulo": "Página da Vaga | Estagiário de Vendas - São João Del Rei - Vaga também para PcD",
+   "fonte": "Gupy",
+   "data": "2026-11-11T19:33:15+00:00",
+   "data_coleta": "2026-11-15T09:55:33+00:00",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdzctc3pISlpWT2lXN0RENnk2WnJvbHc2U1RpWXhWYlNObWxoY3ctRXY5YU5ZM2RZaVpBV09yTEFfRWNnUXNQazFaR2NzV0huMXY4MVczcUw5X0VGdmhaX0x6Wm9SNW4xVkdoakVlQjl2Ykp3RnZzTnZyZzdueGNHZkxFT09Zc2NsWFhOaU53N3pxUG1xOXFSZ2VsV28tVU5memlWbjViQjJXX0s5aUhxYjNoNFU?oc=5",
+   "cargo": "Página da Vaga | Estagiário de Vendas - São João Del Rei - Vaga também para PcD"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "São João del Rei",
+   "titulo": "Página da Vaga | Auxiliar Administrativo | Afya Centro Universitário de São João Del Rei",
+   "fonte": "Gupy",
+   "data": "2026-10-31T18:01:56+00:00",
+   "data_coleta": "2026-11-15T09:55:33+00:00",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYmVWczhKZGkxRXotU0VHU0h4REZIcGc0ZUNPQWhuUnp2UzFLSFVXM1FraklVcHVfQzN4eEtPWmJSaVZvbDMxdWphVXVXZGtmUUp6TlVrRUp5aTR1SlZxc2dkSHdNUnlTTE5TNHRGSGRpbHc1ZTVhdzVZY05jRlFFNGxDQkVLYkNMdTV0aDZBLXVacGU1c01QTWFTQQ?oc=5",
+   "cargo": "Página da Vaga | Auxiliar Administrativo | Afya Centro Universitário de São João Del Rei"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "São João del Rei",
+   "titulo": "Página da Vaga | Analista Financeiro Júnior | Afya Centro Universitário de São João Del Rei",
+   "fonte": "Gupy",
+   "data": "2026-10-31T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:33+00:00",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9tYnZTSTBtUjBNZnN1S3FXZ3kxOGhyYXFJQTlHQlNkYS10VXhJTVhiQld2QXZVN1lzc1FoMXhLdW1CRHozakRGb05CWkt0aTdwaHA1TkJtNkJrQVlzTWU3TnlfYzhsUmtQU3ZXbjNMRTd2cVU4?oc=5",
+   "cargo": "Página da Vaga | Analista Financeiro Júnior | Afya Centro Universitário de São João Del Rei"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "São João del Rei",
+   "titulo": "Página da Vaga | Assistente de Gestão de Terceiros Pleno",
+   "fonte": "Gupy",
+   "data": "2026-10-27T20:30:44+00:00",
+   "data_coleta": "2026-11-15T09:55:33+00:00",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTUNyanFCRUlXNGlCMWZRbXZKZzJOMXFqOFJfbWhFS3Y2ZmV6ckZDUzJsRDdMUGFPWUtaR1dpXy1DMU1EelhvZ01UZG8yWHN1OFNkRVB5VXRXYmY2ck96MDJHLWtwTXYzZXY2S2tvU214TlU2b2xwYXR2UEFCWmdjcW1vcHZJOWFTVVg1VjhEdjBDSHhHSjZKTURkZ21neXpTVng4aWVNYzdqbWYyZHdIaXBOcHRFV1V5U2hGUENR?oc=5",
+   "cargo": "Página da Vaga | Assistente de Gestão de Terceiros Pleno"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "São João del Rei",
+   "titulo": "Página da Vaga | SUPERVISOR DE SUPRIMENTO DE LEITE - CAPTAÇÃO",
+   "fonte": "Gupy",
+   "data": "2026-10-26T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:33+00:00",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE40OEtaQUJqX2htN283N1luZ1FlemVCWWxpM0ktM19DMXY2QWhVNEM1N3Z3Vmdjci13eXI5Vm5TN2RkWEFQQnBDUkF1elUtWjhfS1Q1RmhnNTh2cG0yUUZsYjlRT0hhekJnVGpXVERtd0xVYm53ckE?oc=5",
+   "cargo": "Página da Vaga | SUPERVISOR DE SUPRIMENTO DE LEITE - CAPTAÇÃO"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Como fica o tempo em Conselheiro Lafaiete neste sábado (14/11) segundo a previsão",
+   "fonte": "Mais Minas",
+   "data": "2026-11-14T13:20:00+00:00",
+   "data_coleta": "2026-11-15T09:55:37+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZ2hTcFgyRXlwdTYzenp1RlZGcE00eERjMmhiUmNNcXNsN0xwYU9KM0RsUjY4WTVhVDJkVlhPeXhSN21OUzF1bEZQVzAtcnR3aEVqakVMb3Q4M1hIR1NBMGFja3pWSWZma0tnd2poUkQ0UWlIMG8xbGI5V1dXaUh3dXBpTlVmODdoeXp0czlYNGFNTTJQSVc4ZlZoMmVOa0RWS1V4U2xhdmhWcVJQZGxva3BuNktob3d0?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Previsão do tempo em Conselheiro Lafaiete",
+   "fonte": "Mais Minas",
+   "data": "2026-11-13T22:05:37+00:00",
+   "data_coleta": "2026-11-15T09:55:37+00:00",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9ZSDVTak1fU0dEZlN1RVZ5NkFwRFZIVzBZNHVHMFVBR0ZRdHp5SXByY1ltQXNIaEdIaXpVUEtCeTRNSkNGLXE3TXBubmJvSTd2aTMwVm50NUxsYkRtSTVEcldvUGtQSVpBZUxKTHVpZHJRVVA2aWFZLUJsNWw?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Oportunidades em Congonhas: Sine oferece mais de 100 vagas de emprego nesta sexta-feira (13/11)",
+   "fonte": "Jornal Voz Ativa",
+   "data": "2026-11-13T13:53:45+00:00",
+   "data_coleta": "2026-11-15T09:55:37+00:00",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5CRkJkNGxnRDd3QmNEOEZJU2pJb19qbC1nNkV1NGdORzJsMndtVlRpbmx6U0JYRGJwajRWWGl6Q0VkTlN6YWFpWjNXMUVXQzBvbkNmN2xhcWdFN2xOYUdXU3lQOVo2bmxkQTNqVUQ2Qm1ldUc2LVVPQmZaaWhTZw?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Posto do Sine de Conselheiro Lafaiete oferece vagas de emprego em diversos setores nesta sexta-feira (13/11)",
+   "fonte": "Jornal Voz Ativa",
+   "data": "2026-11-13T13:48:09+00:00",
+   "data_coleta": "2026-11-15T09:55:37+00:00",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYVQ2X0owT0ZuRFdzTXdkejl1Yng0TU94ZEhzbDctUndYT3IxdXFZWDVEb2hTZ1lUWXhMU2J0NUdoQldTY3VTbTRUQXRWcmh0RXdxMHJfUDM0MEVERzRRLXlWR1ZIcVh2N09DSjI0djZ1aW5UZkN1WmxlTVpIWm1uM0UzVTFkUzNRRFB4cA?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Lula vence a eleição presidencial em Conselheiro Lafaiete (MG)",
+   "fonte": "Congresso em Foco",
+   "data": "2026-10-27T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:37+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNd0hQWUNtdEV1LTctdTVRVGZhWWFRb0Y3VE12elBDQ29NbnlILXVsRHZocFFNaUVsMmNSLXZ2YUdrSk5tbHlhc1AxVXRnbHpyMTctMXd0YTFYSUdPQUZlUGhIa0lmMnhIcGFRRWhtZWFJMDBTNVhBejN6ZWpYTkctTktxVm5nMWZYd3JmaG1zRzBUQXhlSmpqMnR2c1hPeWxvLVBQZGV5QldTTUE?oc=5"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Programador de Oficina",
+   "fonte": "Vagas.com",
+   "data": "2026-11-13T20:48:17+00:00",
+   "data_coleta": "2026-11-15T09:55:40+00:00",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUHU1SzJRRUtzS0NsenFoZ1Z6cjRabVE5dk5mdlgzR1JQVlM2a2ROQU9aUzltWVZMQmRUUThCQVFSZ2pDRU5QbG83QjhoYmlESGJrQ0FfQzM4Mm1JbHBpRGRuczB3Y2VXeVl1dEJDb1ZjVW5zZ2hPZmYzVVBFeHlQTUZzb0RmLXZ5bExrV01Ld0dIVi1ZNXhTZFl3?oc=5",
+   "cargo": "Programador de Oficina"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Página da Vaga | Auxiliar Administrativo - Central de Relacionamento",
+   "fonte": "Senac em Minas | Trabalhe Conosco",
+   "data": "2026-11-13T17:28:39+00:00",
+   "data_coleta": "2026-11-15T09:55:40+00:00",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQTJaS2szMjJ3WkRWbFl4VGVEa0NrWVRobjZwY0sxTXVGV2plYUl0b01jTDBIMEVZOFZBS2tKYVNnOGRCOHYtODFXNkJTMVFLdXoyWXhvMU9jd1poem1tQktzSE1RMUVrblNHY05CcDM3am9ubVo2ZHBNc2dqOF9JWDVBWTV1c1VFZGwtZA?oc=5",
+   "cargo": "Página da Vaga | Auxiliar Administrativo - Central de Relacionamento"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Página da Vaga | TECNICO PLANTA EXTERNA",
+   "fonte": "Gupy",
+   "data": "2026-11-12T21:03:13+00:00",
+   "data_coleta": "2026-11-15T09:55:40+00:00",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYl9WRE5KUEVwTmtBUDFDajIxcmgtZm9yZV85dWpUVmJsQ3NMbi01WjBXc0JhSjFOa2N1Zm1wR2pfN3UyazZzZGYtZ3I2dXRKdUxGazgyMHRYaS1ZY04wQlhTcUNQQkF3dUloNDJKV0x2eW9jQXBTcGVnbTF5dXNZMVJwSWZDbExpRWJzN1l3ckNzT3FoRVZjTUg0dFNMMjF5LWJlUDFTcWpaZ1F3?oc=5",
+   "cargo": "Página da Vaga | TECNICO PLANTA EXTERNA"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Página da Vaga | TECNICO TELECOMUNICACOES",
+   "fonte": "Gupy",
+   "data": "2026-11-10T08:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:40+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1PT09yellSVzF4ZmVjS0lwbWxkSjlDaGJvam5BbWlzUHhDdU1PVUZ0RkJhX1JkTGtQMVdiZG1KaV95WVlheUJ4Vjh3?oc=5",
+   "cargo": "Página da Vaga | TECNICO TELECOMUNICACOES"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Conselheiro Lafaiete",
+   "titulo": "Página da Vaga | Agente Comercial e Suporte Escriturário | Conselheiro Lafaiete / MG",
+   "fonte": "Gupy",
+   "data": "2026-11-06T08:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:40+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQWtfMUd4Z1EycllOMjlYT0hUdDREdVRSOVNtcjI5cDNQM09MUTBPbUtsbk5UaVFGdmNqMnhJQUxkcExhNVNaZTdNME1Na1NhT2xkb05SdHJUMElwb0NFU2kwYkphOUJGUTkzWEVScFdmSk1GUXZEOXJ5bHExc1luZW94TjlYX0VVN3pXaUtVTEVWN011UXlWWlk5VzZTc0tJRkE?oc=5",
+   "cargo": "Página da Vaga | Agente Comercial e Suporte Escriturário | Conselheiro Lafaiete / MG"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Santos Dumont",
+   "titulo": "Morre aos 92 anos o ator Rogério Fróes, de 'O bem-amado'",
+   "fonte": "Correio Braziliense",
+   "data": "2026-11-14T12:30:00+00:00",
+   "data_coleta": "2026-11-15T09:55:42+00:00",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxORlZHSHR1Wk5KYlhDRWpuS21SUGxSbVhfZVVheE1VR281YjcyVXByNjh5Rmd6bG96bWxNS3ZkaWxGU0RlVGlETXpDTE10TkRQblYxM0c5c3MxdFJ1YUE1dzFZN2RnbmQyZjd2c2pYNUNuM1RIdDU3elplbWRpeGh4dWsyMzAtQzhnOEVBRUFRRTlvUUluUjN6SjVmSmVvalFkd3dRY2NFRk1xUXpzdUpTbE1WeWU4bHlTTEpyZ3VCalYyQ1J2TkhN0gHMAUFVX3lxTE1HU1ZXN3puMC1lSlYxNVpCNmFOVl9URU9Bdjd2OV9NU0JCalZ5STRLRTYzRUtKc0sxX09BOGdjVUZxR1lvdU40MERvcVBBZFBDaHhsZzNZYWJZMWpmR1YyR3BqUnl4azBmck8weHZBNnllWUxfbFZYS1lwM1VrUkJVR2d5cGh5dFYxRXhqVjBfcG5lMnczWFQwSExnQ3Z6YV9PeURxRDIyU1BYVy04cTM4VFlETXhLbFA3VmlxY2prOG1GOHNCVDZwaGgxYw?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Santos Dumont",
+   "titulo": "Santos Dumont (MG) escolhe Lula para presidente no segundo turno",
+   "fonte": "Congresso em Foco",
+   "data": "2026-10-27T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:42+00:00",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNmRXb3l3LXhaSHdVSWtCU2QtX3NDZWowcXBUTU9fS2trNHB0bEtaVzk1cFdrN0VsLUtWRm5JaGJrSThIWUlhWU5zSS0zTFh6SVYtN2hEOGtXTXNTazVTaVRZQmdtZnBDN1B6dFJETkFZMFdGbExrdUZSblJlS09ocDdsOW1lbzBkY1RtV2JoSmJodUxJaFRySkQzWjJ0TVNIVlpob0dxWmRJSDczYnc?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Santos Dumont",
+   "titulo": "250ª zona eleitoral de Santos Dumont (MG): votos por local de votação no 2º turno",
+   "fonte": "G1",
+   "data": "2026-10-26T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:42+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcGNnQXFqczg1MUZMVy1Kd0lhbHNlSXdRRGxUSV9QWDFFOU1zLV85enhpVGpNQzJWZzl5QWlyQnNqY0NGOUN6QUFudHVpYTJfbEh6SmpWangzLURxMmVST09pa2xZOS11NkY3eHpzVzliZENSdmZ6a3VqMVE2SzlyRzZfT2FINUN2MWdDQmlTWjdUT3RLdVh4YXB4ZFdmN3JyTlZNR0hJT2JaXzFkNXJtbHNnaDl3U3RPd2ZQY2lucWx5R2s4RTFxY29mYmFsWFEzTU5kZER6MDJXRU15R3lhSGtuRjBoRFpjbUHSAfgBQVVfeXFMUEFBWEp6RnI1UDhqdDVVNDVRMGhldnhFSUh6T2x6bWtvc0szVG9tUzZGNVBFOG9QMExBV2hKcVB2bDM5bTN5eWM4RlQ2SUNqM3l6bkVhS25BclRRSWJqNmZYS290R0NYVWNOWDUwVEQweDROVmpsZ1hkVmRnOW1tcktodU1yZ19TVXZFTHl2N25qUTMzUWdtRnoxTGRPSTNTa3NWVlR2ekNxWWpPcUZMdHF2NXRLOGdYMXZwUlZlSXpuanl1NjF6OEluMnVLUThJbzBuelphN1JiOFQxQkt5Y1gxYWhfWXBYdWlrM1BoWEdKeUU1a0JrTWM?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Santos Dumont",
+   "titulo": "Faculdade Santos Dumont, 250ª zona eleitoral: resultado da votação em Santos Dumont (MG) no 2º turno",
+   "fonte": "G1",
+   "data": "2026-10-26T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:42+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNNFFWTmN1UEFBMjBVQWJSd01meTlBUVJBcHI5UXd2VjBzdndjLXBiRktna01kbEs3LUZKNmxpY2txaFd6bkt0dXdPLXFsU1hWX3dJNDRvakNsSWhUVE9OQnVFeFh0RUlBMUFKbUVJLU1LSC1xbkE0UGpQeVc4NmlTRktiWkZkb1piWDR1Z01hYjZ1OTUwaFJjaEUxMjlucUNLV3ZuVnowaVRCSWRmOFpJcTE4V0lhdE83Y3pYaWwxN294bTZPNzBRMHl6VFFwYXZFcVJpN0xNWVBOYmF2WlBObTY1eXY0ajg2UFYzalEtQnQ3VlhVajA3Z28tY2piUkVVNFHSAZACQVVfeXFMT3YwRng0LVZ1RDgyc2NUSkxZZEpFQlc2bTI4UWFnTnpiNmRyODZ1RWR3b0xDRUFNQVdJZ2ZTVkYzUHRKRnBlNl9fdlVQWkRCRnk0Smx3Uk9wOUQxM0w5M0ZURGZaVUY5ZFIxcjdOSjVwSExUY24tX1NmdkE2RjMtVWpQSVNCVnVQR3JfdHBScUkxa0VnaUJJYlZIb2Jadko5SEJ6SUEzTlBHOUtJdE15RnhjSl9NVTZpSzRQbmp4OEFWTm1PN0dYdFdFSGNXT0lvYkp6dm0zTFRZR1R1Q3c5dTRrN3RONXN1d1hkT3V4UnNyWFNMeExtS3ptMWZBN1g4eHQxblo4SUx4SG9Sc2QtUUQ?oc=5"
+  },
+  {
+   "tipo": "cidade",
+   "cidade": "Santos Dumont",
+   "titulo": "IF Sudeste - Santos Dumont, 250ª zona eleitoral: resultado da votação em Santos Dumont (MG) no 2º turno",
+   "fonte": "G1",
+   "data": "2026-10-26T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:42+00:00",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPNktyZ1hScHRya0FjQUxRbHZ0dHJMb3h3R0VjN2VPbGRIU2psUFVkcTlPSE1zUkdicDR3WXJWd3RiTmwyME5ieVNTVXBoeDRDMjVRNWU0U2xJc0M5c3JrWkZZLTBQUTlYR19iWTlYWkhkdEMtTS1aeUd6QTVaT0hOZnVQSlhHNDZ2eUVpVXE1a0pwNUV0WWdhU2JSaTV2VDFycmxCUGsycWNTRS1XQkZ5akg1SzEzSm9IeEY2OG5kQ3NnSVJ3LXlURVpwOXlZLWFVdEFCd3IySVBuOWh5QldzWE9SbF9xSFd1LS1OX0U2RWZmRFhGODFuRjN3NEpvR1JlSGVv0gGSAkFVX3lxTE0zNXJWZk4tajhzenNQRW9EaWVmRWdkbVNXWGNGLVFwWFpkUTRBM3l2dWZlZWxDaDIzVUgwOERlS2xWa3k2Y1B5amFqaE5IeUJFZ1c1MDc1bHhYNTUxeGw4N19FZFdPRDBCdDBHZWNoekVndnNfN2lqVG5XSjFJUEdraXo4MnFJczg4TlZISWpvaHBtbFJERTQwczZKRFJlSHkwRUt3TDZLdm53aVdVTG5SWmxNME5KbTYycG1GY1VSMVNMMS1Fd3gwQnR3UmNSRngxc2tWQVIzWWNLRTZuTVYzM05MMnNTMkFZQ2xybnh0UG9IREpiUWlqQndHOWFLLUpHLUJqQjRaRnowazJXb0ZsVGc?oc=5"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Santos Dumont",
+   "titulo": "Médico Plantonista Pediatra - Região Sul (Processo Seletivo Externo)",
+   "fonte": "Vagas.com",
+   "data": "2026-10-17T06:15:09+00:00",
+   "data_coleta": "2026-11-15T09:55:45+00:00",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQXV6ai01c1h5M2pzdE9VMm85ZzR1dTVJdlI2eW9yX0Y1M2tGaHBzaGxFOEp3MmUtNDZKbzdTZGZycnRuM3d5d3JUb0s5YTREYWxDS19OVTZsTzBHT3JQRFZibms3YTV2Q21TWnBTcnRuNzhPQUpNNk5lQ2g4ZDZXQzR0RkhhdHZQdkZCQ243ZTV2VkxuTElpVlZlQ0xBc2ZHb0VqU1YtN21kXzMzZGZSc1dGenlXRjRPU0tDSENQMHRPeXB2c2wzc1FyMHNVSXF3eFdEU2dB?oc=5",
+   "cargo": "Médico Plantonista Pediatra - Região Sul (Processo Seletivo Externo)"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Santos Dumont",
+   "titulo": "Mecânico de Manutenção",
+   "fonte": "Vagas.com",
+   "data": "2026-10-09T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:45+00:00",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5iWnVET1pDSHBQV1dRSnZzQ1RvT2k5d3ZpY2hiaFUyNTRHaXpfZHN4dXB0SXdmVjgyWmNEeEc0dmp3X2k4dW1XSjh3YzZ4Ukc3SDVUVG96NTRlQ0hlMFZJVjJFT3JjTnMwcTAxZDB5WQ?oc=5",
+   "cargo": "Mecânico de Manutenção"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Santos Dumont",
+   "titulo": "Operador de Britagem",
+   "fonte": "Vagas.com",
+   "data": "2026-09-01T15:44:51+00:00",
+   "data_coleta": "2026-11-15T09:55:45+00:00",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPak92QzFobVZHS0JCalJuWTRwalBqY21WUjNiTVl3WGZJN0MxcGxDVlBvbWpBRmxkdXV5X1ZhaklLWlNUY2d6MG1ha19UMktpTnktRlRFQ2FoUUtxWW1ZZHktWkJGVHF0YVhqX1ZGaHZsOWxHQlI1Ni1LZ2VsQ3ZvY2RrWkxQZHYzdXBtSm9zZjJSdw?oc=5",
+   "cargo": "Operador de Britagem"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Santos Dumont",
+   "titulo": "operador de empilhadeira em santos",
+   "fonte": "Vagas.com",
+   "data": "2026-08-31T07:00:00+00:00",
+   "data_coleta": "2026-11-15T09:55:45+00:00",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zSjdOVjZ6ZHZSRGw4dW5EdEVibHVRNTh4UmgzUllmT2tPZjg5WE82WDRydjFVR3BneFlEZVBsRWpsdnpkUTZNajM4OXBFYm14cUhydFBNVkppdV85a25RaVpSajh3Q2E5R1Rocm42LVJXYzk5WFdn?oc=5",
+   "cargo": "operador de empilhadeira em santos"
+  },
+  {
+   "tipo": "vaga",
+   "cidade": "Santos Dumont",
+   "titulo": "Santos Dumont",
+   "fonte": "Vagas.com",
+   "data": "2026-02-28T05:44:53+00:00",
+   "data_coleta": "2026-11-15T09:55:45+00:00",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1KZ1JLdUhuT0ZxWkFIM3BVOFdrOE1IRWVDZFR5bGtHNktzSmt4ODBrYjJKRGVod0hnQVlJVWM5enVmb1FBNF9mQTBBempqeW5SdmdJZ2xHaERkYk9tcFE?oc=5",
+   "cargo": "Santos Dumont"
   }
  ]
 }
