@@ -1,6 +1,6 @@
 [
   {
-    "titulo": "Zona da Mata tem previsão de tempo instável nesta semana - veja previsão para Guarani",
+    "titulo": "Zona da Mata tem previsão de tempo instável nesta semana - veja previsão para Além Paraíba",
     "link": "https://g1.globo.com/mg/zona-da-mata/",
     "resumo": "Inmet alerta para pancadas de chuva isoladas em toda a região. Temperatura entre 18 e 29 graus.",
     "fonte": "G1 Zona da Mata",
@@ -208,38 +208,6 @@
     "categoria": "Zona da Mata"
   },
   {
-    "titulo": "Vagas de emprego em Teixeiras: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Teixeiras+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Teixeiras e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Teixeiras",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Coimbra: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Coimbra+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Coimbra e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Coimbra",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Cataguases: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Cataguases+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Cataguases e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Cataguases",
-    "categoria": "Vagas"
-  },
-  {
-    "titulo": "Vagas de emprego em Ervália: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Ervália+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Ervália e região. Veja como se candidatar.",
-    "fonte": "Vagas",
-    "cidade": "Ervália",
-    "categoria": "Vagas"
-  },
-  {
     "titulo": "Vagas de emprego em Juiz de Fora: confira oportunidades abertas hoje",
     "link": "https://www.google.com/search?q=vagas+emprego+Juiz+de+Fora+MG",
     "resumo": "Oportunidades em supermercados, lojas e prefeituras de Juiz de Fora e região. Veja como se candidatar.",
@@ -248,27 +216,59 @@
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Miraí: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Miraí+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Miraí e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Pirapetinga: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Pirapetinga+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Pirapetinga e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Miraí",
+    "cidade": "Pirapetinga",
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Ubá: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Ubá+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Ubá e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Visconde do Rio Branco: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Visconde+do+Rio+Branco+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Visconde do Rio Branco e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Ubá",
+    "cidade": "Visconde do Rio Branco",
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Tocantins: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Tocantins+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Tocantins e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Rio Pomba: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Rio+Pomba+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Rio Pomba e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Tocantins",
+    "cidade": "Rio Pomba",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em São João Nepomuceno: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+São+João+Nepomuceno+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de São João Nepomuceno e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "São João Nepomuceno",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Teixeiras: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Teixeiras+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Teixeiras e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Teixeiras",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Recreio: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Recreio+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Recreio e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Recreio",
+    "categoria": "Vagas"
+  },
+  {
+    "titulo": "Vagas de emprego em Muriaé: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Muriaé+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Muriaé e região. Veja como se candidatar.",
+    "fonte": "Vagas",
+    "cidade": "Muriaé",
     "categoria": "Vagas"
   },
   {
@@ -280,11 +280,11 @@
     "categoria": "Vagas"
   },
   {
-    "titulo": "Vagas de emprego em Recreio: confira oportunidades abertas hoje",
-    "link": "https://www.google.com/search?q=vagas+emprego+Recreio+MG",
-    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Recreio e região. Veja como se candidatar.",
+    "titulo": "Vagas de emprego em Cataguases: confira oportunidades abertas hoje",
+    "link": "https://www.google.com/search?q=vagas+emprego+Cataguases+MG",
+    "resumo": "Oportunidades em supermercados, lojas e prefeituras de Cataguases e região. Veja como se candidatar.",
     "fonte": "Vagas",
-    "cidade": "Recreio",
+    "cidade": "Cataguases",
     "categoria": "Vagas"
   },
   {
