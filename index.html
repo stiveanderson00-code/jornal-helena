@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Jornal Helena - Zona da Mata em Tempo Real</title>
+<meta name="description" content="25 cidades da Zona da Mata em um só lugar. De Leopoldina a Juiz de Fora: notícias, vagas de emprego e ofertas, atualizadas o dia todo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: faixa vermelha (só se a coleta parar) > topo laranja com título e clima > barra fixa
+   com busca e 4 abas > chips de cidade > cartões por cidade com borda laranja à esquerda > rodapé. */
+:root {
+  --laranja: #FF6B00;
+  --laranja-escuro: #C2410C;   /* laranja para TEXTO sobre branco (o #FF6B00 puro é claro demais) */
+  --laranja-soft: #FFF1E6;
+  --bg: #ffffff;
+  --ink: #1d2433;
+  --ink-2: #4a5362;
+  --ink-3: #6b7280;
+  --line: #e7e3df;
+  --wash: #f7f5f3;
+  --verde: #0d7048;
+  --alerta: #b42318;
+  --f-titulo: "Space Grotesk", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-texto: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 130px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 15px/1.5 var(--f-texto); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--laranja); z-index: 30; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.gutter { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* ---------- faixa vermelha (coleta parada) ---------- */
+.faixa { background: var(--alerta); color: #fff; font-size: 14px; position: relative; z-index: 31; }
+.faixa .gutter { padding-top: 10px; padding-bottom: 10px; }
+
+/* ---------- topo laranja ---------- */
+.hero { background: var(--laranja); color: #fff; }
+.hero .gutter { padding-top: 14px; padding-bottom: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: flex-end; justify-content: space-between; }
+.hero h1 { margin: 0; font: 700 clamp(21px, 5.2vw, 32px)/1.12 var(--f-titulo); letter-spacing: -0.02em; text-wrap: balance; }
+.hero .sub { margin: 4px 0 0; font-size: 14.5px; font-weight: 600; }
+.hero .lado { display: flex; flex-direction: column; gap: 4px; font-size: 14px; font-weight: 500; }
+.clima { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.clima b { font: 700 18px/1 var(--f-titulo); }
+.status { display: flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 500; }
+.ponto { width: 8px; height: 8px; border-radius: 50%; background: #fff; flex: none; animation: pulsa 2s ease-in-out infinite; }
+.status.parado .ponto { animation: none; opacity: .5; }
+@keyframes pulsa { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .ponto { animation: none; } }
+.chip { font-size: 11px; font-weight: 600; letter-spacing: .03em; padding: 1px 7px; border-radius: 999px; border: 1px dashed currentColor; opacity: .85; white-space: nowrap; }
+
+/* ---------- barra fixa: busca + abas ---------- */
+.barra { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+.busca { position: relative; padding-top: 10px; }
+.busca input {
+  width: 100%; height: 52px; padding: 0 48px 0 46px; font: 500 17px/1 var(--f-texto); color: var(--ink);
+  background: var(--wash) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") no-repeat 15px 50%;
+  border: 2px solid var(--line); border-radius: 12px;
+}
+.busca input::placeholder { color: var(--ink-3); font-weight: 400; }
+@media (max-width: 480px) { .busca input::placeholder { font-size: 14px; } }
+.busca input:focus { outline: none; background-color: #fff; border-color: var(--laranja); box-shadow: 0 0 0 3px var(--laranja-soft); }
+.limpar { position: absolute; right: 8px; top: 18px; width: 36px; height: 36px; border: 0; border-radius: 8px; background: transparent; color: var(--ink-3); font-size: 22px; line-height: 1; cursor: pointer; }
+.limpar:hover { background: var(--line); color: var(--ink); }
+.sugestoes { list-style: none; margin: 6px 0 0; padding: 6px; position: absolute; left: 0; right: 0; top: 100%; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgba(29,36,51,.16); z-index: 25; }
+.sugestoes button { display: block; width: 100%; text-align: left; border: 0; background: transparent; padding: 10px 12px; border-radius: 8px; cursor: pointer; font-size: 15px; }
+.sugestoes li.ativa button, .sugestoes button:hover { background: var(--laranja-soft); color: var(--laranja-escuro); }
+.abas { display: flex; gap: 6px; padding: 8px 0 10px; overflow-x: auto; scrollbar-width: none; }
+.abas::-webkit-scrollbar { display: none; }
+.aba { flex: 1 0 auto; border: 0; border-radius: 999px; padding: 10px 14px; background: var(--wash); color: var(--ink-2); cursor: pointer; white-space: nowrap; font: 700 12.5px/1 var(--f-titulo); letter-spacing: .06em; }
+.aba:hover { background: var(--laranja-soft); color: var(--laranja-escuro); }
+.aba[aria-selected="true"] { background: var(--laranja); color: #fff; }
+@media (min-width: 700px) { .aba { flex: 0 0 auto; min-width: 150px; font-size: 13px; } }
+
+/* ---------- conteúdo ---------- */
+.miolo { padding-top: 16px; padding-bottom: 30px; }
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: thin; }
+.chips button { flex: none; border: 1.5px solid var(--line); background: #fff; border-radius: 999px; padding: 7px 12px; font-size: 13.5px; font-weight: 500; cursor: pointer; white-space: nowrap; }
+.chips button:hover { border-color: var(--laranja); color: var(--laranja-escuro); }
+.chips button[aria-pressed="true"] { background: var(--laranja); border-color: var(--laranja); color: #fff; font-weight: 600; }
+.chamada { margin: 0 0 16px; padding: 14px 16px; border-radius: 10px; background: var(--laranja-soft); border-left: 4px solid var(--laranja); }
+.chamada strong { font: 700 17px/1.3 var(--f-titulo); display: block; text-wrap: balance; }
+.chamada span { font-size: 13px; color: var(--ink-2); }
+
+.secao { margin-bottom: 28px; }
+.secao-topo { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--laranja); margin-bottom: 12px; }
+.secao h2 { margin: 0; font: 700 20px/1.2 var(--f-titulo); letter-spacing: -0.01em; text-wrap: balance; }
+.secao .conta { font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
+.grade { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { min-width: 0; display: flex; flex-direction: column; gap: 8px; padding: 13px 14px; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--laranja); border-radius: 8px; }
+.card:hover { border-color: #f1c6a5; border-left-color: var(--laranja); }
+.meta { font-size: 12.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.meta .cid { font-weight: 700; color: var(--laranja-escuro); }
+.meta .fonte { font-weight: 600; color: var(--ink-2); }
+.tag { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--laranja-soft); color: var(--laranja-escuro); }
+.tag.ex { background: var(--wash); color: var(--ink-3); border: 1px dashed #c9c2bb; font-weight: 600; }
+.card h3 { margin: 0; font: 600 15.5px/1.35 var(--f-texto); text-wrap: pretty; overflow-wrap: anywhere; }
+.acoes { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+.btn { text-decoration: none; font-size: 13.5px; font-weight: 700; line-height: 1; padding: 9px 12px; border-radius: 8px; border: 1.5px solid var(--laranja); background: var(--laranja); color: #fff; cursor: pointer; white-space: nowrap; }
+.btn:hover { background: var(--laranja-escuro); border-color: var(--laranja-escuro); }
+.btn.sec { background: #fff; color: var(--laranja-escuro); }
+.btn.sec:hover { background: var(--laranja-soft); border-color: var(--laranja); }
+.vazio { grid-column: 1 / -1; padding: 16px; border: 1px dashed #d8cfc6; border-radius: 8px; color: var(--ink-3); background: var(--wash); font-size: 14px; }
+.mensagem { padding: 40px 0; text-align: center; color: var(--ink-2); }
+.mensagem strong { display: block; font: 700 18px/1.3 var(--f-titulo); color: var(--ink); margin-bottom: 6px; }
+
+/* ---------- ofertas ---------- */
+.ofertas { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); }
+.oferta { min-width: 0; display: flex; flex-direction: column; gap: 10px; padding: 14px; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--laranja); border-radius: 8px; }
+.oferta-topo { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.loja { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--laranja-soft); color: var(--laranja-escuro); }
+.desc { font: 700 12px/1 var(--f-titulo); padding: 5px 8px; border-radius: 6px; background: var(--verde); color: #fff; }
+.oferta h3 { margin: 0; font: 600 16px/1.3 var(--f-texto); text-wrap: pretty; overflow-wrap: anywhere; }
+.precos { margin-top: auto; }
+.velho { font-size: 13px; color: var(--ink-3); text-decoration: line-through; font-variant-numeric: tabular-nums; }
+.novo { font: 700 26px/1.1 var(--f-titulo); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.btn.ver { text-align: center; padding: 12px 14px; font-size: 15px; }
+.nota { margin: 14px 0 0; font-size: 12.5px; color: var(--ink-3); max-width: 80ch; }
+
+/* ---------- rodapé ---------- */
+.anuncie { border-top: 4px solid var(--laranja); background: var(--wash); }
+.anuncie .gutter { padding-top: 26px; padding-bottom: 26px; }
+.anuncie h2 { margin: 0; font: 700 22px/1.2 var(--f-titulo); letter-spacing: -0.01em; }
+.anuncie p { margin: 6px 0 14px; color: var(--ink-2); }
+.banners { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+.banner { min-width: 0; display: flex; flex-direction: column; gap: 6px; padding: 16px; background: #fff; border: 2px dashed var(--laranja); border-radius: 10px; }
+.banner .t { font-size: 11px; font-weight: 700; letter-spacing: .08em; color: var(--ink-3); text-transform: uppercase; }
+.banner strong { font: 700 19px/1.2 var(--f-titulo); }
+.banner span { font-size: 13.5px; color: var(--ink-2); }
+.banner .btn { margin-top: 8px; align-self: flex-start; }
+.rodape { color: var(--ink-3); font-size: 13px; }
+.rodape .gutter { padding-top: 20px; padding-bottom: 30px; display: flex; flex-direction: column; gap: 8px; }
+.rodape p { margin: 0; max-width: 90ch; }
+.rodape strong { color: var(--ink-2); }
+</style>
+</head>
+<body>
+
+<div class="faixa" id="faixa" role="alert" hidden><div class="gutter"></div></div>
+
+<header class="hero">
+  <div class="gutter">
+    <div>
+      <h1>Jornal Helena - Zona da Mata em Tempo Real</h1>
+      <p class="sub" id="sub">25 cidades. Atualização a cada 5 min</p>
+    </div>
+    <div class="lado">
+      <div class="clima" id="clima" aria-label="Previsão do tempo em Leopoldina"></div>
+      <div class="status" id="status" aria-live="polite"></div>
+    </div>
+  </div>
+</header>
+
+<div class="barra">
+  <div class="gutter">
+    <div class="busca">
+      <label class="sr" for="q">Digite sua cidade</label>
+      <input id="q" type="text" inputmode="search" autocomplete="off" autocapitalize="off" spellcheck="false"
+             placeholder="Digite sua cidade - ex: Ubá, Leopoldina"
+             role="combobox" aria-expanded="false" aria-controls="sug" aria-autocomplete="list">
+      <button class="limpar" id="limpar" type="button" aria-label="Limpar busca" hidden>&times;</button>
+      <ul class="sugestoes" id="sug" role="listbox" hidden></ul>
+    </div>
+    <nav class="abas" role="tablist" aria-label="Seções do jornal">
+      <button class="aba" role="tab" data-aba="zona" aria-selected="true">ZONA DA MATA</button>
+      <button class="aba" role="tab" data-aba="vagas" aria-selected="false">VAGAS</button>
+      <button class="aba" role="tab" data-aba="brasil" aria-selected="false">BRASIL</button>
+      <button class="aba" role="tab" data-aba="ofertas" aria-selected="false">OFERTAS</button>
+    </nav>
+  </div>
+</header>
+
+<main class="gutter miolo">
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por cidade" hidden></div>
+  <div id="conteudo" aria-live="polite"></div>
+</main>
+
+<section class="anuncie" aria-labelledby="anuncie-t">
+  <div class="gutter">
+    <h2 id="anuncie-t">Anuncie aqui</h2>
+    <p><span id="precoAnuncio"></span> Seu negócio na frente de quem procura notícia e emprego na sua cidade.</p>
+    <div class="banners" id="banners"></div>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="gutter">
+    <p><strong>vagas emprego Leopoldina Ubá Juiz de Fora Cataguases Muriaé Zona da Mata</strong></p>
+    <p>25 cidades da Zona da Mata em um só lugar. De Leopoldina a Juiz de Fora, notícias, vagas de emprego e ofertas atualizadas ao longo do dia.</p>
+    <p><strong>Jornal Helena agrega notícias públicas com link original.</strong> Os textos pertencem aos veículos de origem e cada título leva à página da fonte.</p>
+    <p>Algumas ofertas usam links de afiliados: se você comprar por eles, o Jornal Helena pode receber uma comissão, sem custo extra para você. Preços e estoque podem mudar a qualquer momento na loja.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ===== CONFIGURAÇÃO: troque aqui ===== */
+  var CONFIG = {
+    whatsappAnuncio: '5532999999999',      // seu WhatsApp com 55 + DDD, só números
+    precoAnuncio: 'R$ 150/mês por cidade',
+    cidadesBanner: ['Leopoldina', 'Cataguases', 'Ubá', 'Juiz de Fora']
+  };
+  /* ====================================== */
+
+  var ORGAOS_PADRAO = ['Câmara dos Deputados', 'Senado Federal', 'STF', 'TSE', 'Itamaraty', 'Agência Brasil'];
+  var ABAS = ['zona', 'vagas', 'brasil', 'ofertas'];
+  var TIPO = { zona: 'cidade', vagas: 'vaga', brasil: 'nacional' };
+  var POPULARES = ['Leopoldina', 'Cataguases', 'Ubá', 'Muriaé', 'Juiz de Fora', 'Viçosa'];
+  var URL_DADOS = 'noticias.json';
+  var RECARGA_MS = 2 * 60 * 1000;
+  var LIMITE_ATRASO_S = 60 * 60;
+  var POR_GRUPO = 5;
+  var CLIMA_URL = 'https://api.open-meteo.com/v1/forecast?latitude=-21.53&longitude=-42.64&current_weather=true';
+
+  var dados = null, erroCarga = false, aba = 'zona', busca = '', sugAtiva = -1, climaVivo = null;
+
+  function $(id) { return document.getElementById(id); }
+  function norm(s) { return String(s == null ? '' : s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim(); }
+
+  function h(tag, attrs) {
+    var el = document.createElement(tag);
+    if (attrs) for (var k in attrs) {
+      var v = attrs[k];
+      if (v == null || v === false) continue;
+      if (k === 'class') el.className = v;
+      else if (k === 'text') el.textContent = v;
+      else el.setAttribute(k, v === true ? '' : v);
+    }
+    for (var i = 2; i < arguments.length; i++) {
+      var c = arguments[i];
+      if (c == null || c === false) continue;
+      el.appendChild(typeof c === 'string' ? document.createTextNode(c) : c);
+    }
+    return el;
+  }
+
+  function urlSegura(u) { return /^https?:\/\//i.test(u || '') ? u : null; }
+  function parseData(s) { if (!s) return null; var d = new Date(s); return isNaN(d.getTime()) ? null : d; }
+  function relativo(d) {
+    var s = (Date.now() - d.getTime()) / 1000;
+    if (s < 60) return 'agora mesmo';
+    var m = Math.floor(s / 60);
+    if (m < 60) return 'há ' + m + ' min';
+    var hr = Math.floor(m / 60);
+    if (hr < 24) return 'há ' + hr + ' h';
+    var dd = Math.floor(hr / 24);
+    return 'há ' + dd + (dd === 1 ? ' dia' : ' dias');
+  }
+  function absoluto(d) {
+    return d.toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+  }
+  function reais(n) { return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); }
+
+  /* ---------- listas (vêm do noticias.json) ---------- */
+  function cidades() {
+    if (dados && dados.cidades && dados.cidades.length) return dados.cidades;
+    var vistas = {}, lista = [];
+    if (dados) dados.itens.forEach(function (i) { if (i.cidade && !vistas[i.cidade]) { vistas[i.cidade] = 1; lista.push(i.cidade); } });
+    return lista;
+  }
+  function orgaos() { return (dados && dados.orgaos && dados.orgaos.length) ? dados.orgaos : ORGAOS_PADRAO; }
+
+  /* ---------- busca ---------- */
+  function analisar(q) {
+    var alvo = null;
+    var termo = norm(q).replace(/\b(vagas?|empregos?|ofertas?|promocao|promocoes)\b/g, function (m) {
+      alvo = alvo || (/^vag|^empreg/.test(m) ? 'vagas' : 'ofertas');
+      return ' ';
+    }).replace(/\s+/g, ' ').trim();
+    return { termo: termo, alvo: alvo };
+  }
+  function cidadesQue(termo) {
+    if (!termo) return [];
+    var ini = [], meio = [];
+    cidades().forEach(function (c) {
+      var i = norm(c).indexOf(termo);
+      if (i === 0) ini.push(c); else if (i > 0) meio.push(c);
+    });
+    return ini.concat(meio);
+  }
+
+  /* ---------- carregar ---------- */
+  function buscarJson(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
+  }
+  function carregar() {
+    // ?t= fura o cache do GitHub Pages, que guarda arquivos por alguns minutos
+    buscarJson(URL_DADOS + '?t=' + Date.now())
+      .catch(function () { return buscarJson(URL_DADOS); })
+      .then(function (d) {
+        if (!d || !Array.isArray(d.itens)) throw new Error('formato inesperado');
+        dados = d; erroCarga = false; render();
+      })
+      .catch(function () { erroCarga = true; render(); });
+  }
+
+  /* ---------- clima: Open-Meteo ao vivo; se falhar, o valor de exemplo do JSON ---------- */
+  var CODIGOS = { 0: 'Céu limpo', 1: 'Predominantemente limpo', 2: 'Parcialmente nublado', 3: 'Nublado', 45: 'Neblina', 48: 'Neblina',
+    51: 'Garoa fraca', 53: 'Garoa', 55: 'Garoa forte', 61: 'Chuva fraca', 63: 'Chuva', 65: 'Chuva forte', 80: 'Pancadas de chuva',
+    81: 'Pancadas de chuva', 82: 'Pancadas fortes', 95: 'Tempestade', 96: 'Tempestade com granizo', 99: 'Tempestade com granizo' };
+  function carregarClima() {
+    fetch(CLIMA_URL).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) {
+      var c = j.current_weather;
+      climaVivo = { temp: Math.round(c.temperature), descricao: CODIGOS[c.weathercode] || 'Tempo variável' };
+      renderClima();
+    }).catch(function () { /* mantém o que estiver na tela */ });
+  }
+  function renderClima() {
+    var c = climaVivo || (dados && dados.clima), el = $('clima');
+    el.textContent = '';
+    el.appendChild(h('span', { text: 'Leopoldina MG' }));
+    if (!c) { el.appendChild(h('span', { text: 'previsão indisponível' })); return; }
+    el.appendChild(h('b', { text: c.temp + '°C' }));
+    el.appendChild(h('span', { text: c.descricao }));
+    if (!climaVivo && c.exemplo) el.appendChild(h('span', { class: 'chip', text: 'exemplo' }));
+  }
+
+  /* ---------- desenho ---------- */
+  function ordenar(l) {
+    return l.slice().sort(function (a, b) { return (parseData(b.data || b.data_coleta) || 0) - (parseData(a.data || a.data_coleta) || 0); });
+  }
+  function agrupar(itens, chave) {
+    var m = {};
+    itens.forEach(function (i) { (m[i[chave]] = m[i[chave]] || []).push(i); });
+    return m;
+  }
+  function zap(titulo, link) {
+    return 'https://wa.me/?text=' + encodeURIComponent(titulo + '\n' + link + '\nvia Jornal Helena - Zona da Mata em Tempo Real');
+  }
+
+  function cartao(it, ehVaga) {
+    var d = parseData(it.data || it.data_coleta);
+    var link = urlSegura(it.link);
+    var titulo = ehVaga ? (it.cargo || it.titulo) : it.titulo;
+    return h('article', { class: 'card' },
+      h('div', { class: 'meta' },
+        it.cidade ? h('span', { class: 'cid', text: it.cidade }) : null,
+        h('span', { class: 'fonte', text: 'Fonte: ' + (it.fonte || 'não informada') }),
+        d ? h('span', { title: absoluto(d), text: relativo(d) }) : null
+      ),
+      (it.regiao || it.exemplo) ? h('div', { class: 'meta' },
+        it.regiao ? h('span', { class: 'tag', text: 'Vagas na região' }) : null,
+        it.exemplo ? h('span', { class: 'tag ex', text: 'exemplo' }) : null) : null,
+      h('h3', { text: titulo || '(sem título)' }),
+      link ? h('div', { class: 'acoes' },
+        h('a', { class: 'btn', href: link, target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'Abrir na fonte: ' + (titulo || '') }, 'Abrir na fonte ↗'),
+        h('a', { class: 'btn sec', href: zap(titulo || '', link), target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'Compartilhar no WhatsApp: ' + (titulo || '') }, 'Compartilhar no WhatsApp')
+      ) : null
+    );
+  }
+
+  function secao(titulo, itens, ehVaga, vazio) {
+    var lista = ordenar(itens).slice(0, POR_GRUPO);
+    var grade = h('div', { class: 'grade' });
+    if (lista.length) lista.forEach(function (i) { grade.appendChild(cartao(i, ehVaga)); });
+    else grade.appendChild(h('div', { class: 'vazio', text: vazio }));
+    return h('section', { class: 'secao' },
+      h('div', { class: 'secao-topo' }, h('h2', { text: titulo }),
+        lista.length ? h('span', { class: 'conta', text: lista.length + (lista.length === 1 ? ' item' : ' itens') }) : null),
+      grade);
+  }
+
+  function cartaoOferta(o) {
+    var link = urlSegura(o.link_afiliado) || urlSegura(o.link);
+    var velho = Number(o.preco_antigo), novo = Number(o.preco_novo);
+    var pct = velho > 0 && novo > 0 && novo < velho ? Math.round((1 - novo / velho) * 100) : 0;
+    return h('article', { class: 'oferta' },
+      h('div', { class: 'oferta-topo' }, h('span', { class: 'loja', text: o.loja || 'Loja' }), pct ? h('span', { class: 'desc', text: '-' + pct + '%' }) : null),
+      h('h3', { text: o.titulo || '(oferta)' }),
+      h('div', { class: 'precos' },
+        velho ? h('div', { class: 'velho', text: 'de ' + reais(velho) }) : null,
+        h('div', { class: 'novo', text: novo ? reais(novo) : 'Ver preço' })),
+      o.exemplo ? h('div', { class: 'meta' }, h('span', { class: 'tag ex', text: 'exemplo: preço fictício' })) : null,
+      link ? h('a', { class: 'btn ver', href: link, target: '_blank', rel: 'sponsored noopener noreferrer', 'aria-label': 'Ver oferta: ' + (o.titulo || '') }, 'Ver oferta') : null
+    );
+  }
+
+  function mensagem(t, txt) { return h('div', { class: 'mensagem' }, h('strong', { text: t }), txt); }
+
+  function renderAbas() {
+    Array.prototype.forEach.call(document.querySelectorAll('.aba'), function (b) {
+      b.setAttribute('aria-selected', b.getAttribute('data-aba') === aba ? 'true' : 'false');
+    });
+  }
+
+  function renderChips() {
+    var el = $('chips');
+    if (!dados || (aba !== 'zona' && aba !== 'vagas')) { el.hidden = true; return; }
+    el.hidden = false; el.textContent = '';
+    var atual = norm(busca);
+    function chip(rotulo, valor) {
+      var b = h('button', { type: 'button', 'aria-pressed': (norm(valor) === atual) ? 'true' : 'false', text: rotulo });
+      b.addEventListener('click', function () { $('q').value = valor; busca = valor; $('limpar').hidden = !valor; render(); });
+      el.appendChild(b);
+    }
+    chip('Todas', '');
+    cidades().forEach(function (c) { chip(c, c); });
+  }
+
+  function renderStatus() {
+    var st = $('status'), fx = $('faixa'), caixa = fx.firstElementChild;
+    var d = dados ? parseData(dados.atualizado_em) : null;
+    var velho = !!dados && (!d || (Date.now() - d.getTime()) / 1000 > LIMITE_ATRASO_S);
+    st.className = 'status' + (velho || erroCarga ? ' parado' : '');
+    st.textContent = '';
+    st.appendChild(h('span', { class: 'ponto' }));
+    var txt;
+    if (!dados) txt = erroCarga ? 'Sem conexão com os dados' : 'Carregando…';
+    else if (!d) txt = 'Ainda sem coleta';
+    else txt = (erroCarga ? 'Falha ao recarregar. Dados de ' : 'Atualizado ') + relativo(d).replace('agora mesmo', 'agora');
+    st.appendChild(h('span', { text: txt }));
+    caixa.textContent = '';
+    if (velho) {
+      fx.hidden = false;
+      caixa.appendChild(h('strong', { text: 'Coleta parada. ' }));
+      caixa.appendChild(document.createTextNode(d
+        ? 'Os dados têm mais de 1 hora (última atualização em ' + absoluto(d) + '). O que aparece abaixo pode estar desatualizado.'
+        : 'O coletor ainda não registrou nenhuma atualização.'));
+    } else fx.hidden = true;
+  }
+
+  function renderBanners() {
+    var b = $('banners'); b.textContent = '';
+    $('precoAnuncio').textContent = CONFIG.precoAnuncio + '.';
+    CONFIG.cidadesBanner.forEach(function (c) {
+      var msg = 'Olá! Quero anunciar no Jornal Helena em ' + c + '.';
+      b.appendChild(h('div', { class: 'banner' },
+        h('div', { class: 't', text: 'Espaço de exemplo' }),
+        h('strong', { text: 'Seu anúncio aqui' }),
+        h('span', { text: 'Banner em destaque para quem procura notícias e vagas em ' + c + '.' }),
+        h('a', { class: 'btn', href: 'https://wa.me/' + CONFIG.whatsappAnuncio + '?text=' + encodeURIComponent(msg), target: '_blank', rel: 'noopener noreferrer' },
+          'Anunciar em ' + c + ' pelo WhatsApp')));
+    });
+  }
+
+  function render() {
+    renderAbas(); renderStatus(); renderClima(); renderChips();
+    var nc = cidades().length; if (nc) $('sub').textContent = nc + ' cidades. Atualização a cada 5 min';
+    var c = $('conteudo'); c.textContent = '';
+
+    if (!dados) {
+      c.appendChild(erroCarga
+        ? mensagem('Não foi possível carregar o noticias.json', 'Confira se o arquivo está publicado ao lado do index.html e sem erro de vírgula ou aspas. Nova tentativa em 2 minutos.')
+        : mensagem('Carregando notícias…', ''));
+      return;
+    }
+
+    var termo = analisar(busca).termo;
+    var casadas = cidadesQue(termo);
+
+    if (aba === 'ofertas') {
+      c.appendChild(h('div', { class: 'chamada' },
+        h('strong', { text: 'Ofertas que entregam em Leopoldina, Cataguases, Ubá e Zona da Mata' }),
+        h('span', { text: 'Confira o prazo de entrega para o seu CEP na página da loja antes de comprar.' })));
+      var lo = Array.isArray(dados.ofertas) ? dados.ofertas : [];
+      if (termo) lo = lo.filter(function (o) { return norm((o.titulo || '') + ' ' + (o.loja || '')).indexOf(termo) >= 0; });
+      if (lo.length) {
+        var grade = h('div', { class: 'ofertas' });
+        lo.forEach(function (o) { grade.appendChild(cartaoOferta(o)); });
+        c.appendChild(grade);
+        c.appendChild(h('p', { class: 'nota', text: 'Podemos receber comissão pelas compras feitas pelos links desta aba. Preços e disponibilidade são definidos pelas lojas.' }));
+      } else c.appendChild(mensagem('Nenhuma oferta' + (termo ? ' para “' + busca.trim() + '”' : ' cadastrada'), termo ? 'Tente TV, celular, geladeira ou o nome da loja.' : 'Cadastre ofertas na chave "ofertas" do noticias.json.'));
+      return;
+    }
+
+    var itens = dados.itens.filter(function (i) { return i.tipo === TIPO[aba]; });
+    var achou = false;
+
+    if (aba === 'brasil') {
+      // na capa do Brasil, nome de cidade não esconde nada; o campo filtra por assunto
+      var filtrar = termo && !casadas.length;
+      var g = agrupar(itens, 'orgao');
+      orgaos().forEach(function (o) {
+        var l = g[o] || [];
+        if (filtrar) l = l.filter(function (i) { return norm(i.titulo + ' ' + i.fonte).indexOf(termo) >= 0; });
+        if (filtrar && !l.length) return;
+        achou = true;
+        c.appendChild(secao(o, l, false, 'Aguardando a primeira coleta deste órgão.'));
+      });
+    } else {
+      var ehVaga = aba === 'vagas';
+      var porCid = agrupar(itens, 'cidade');
+      var lista = cidades(), porTitulo = false;
+      if (termo) { if (casadas.length) lista = casadas; else porTitulo = true; }
+      lista.forEach(function (cid) {
+        var l = porCid[cid] || [];
+        if (porTitulo) {
+          l = l.filter(function (i) { return norm((i.titulo || '') + ' ' + (i.cargo || '') + ' ' + (i.fonte || '')).indexOf(termo) >= 0; });
+          if (!l.length) return;
+        }
+        achou = true;
+        c.appendChild(secao(cid + ' · MG', l, ehVaga, ehVaga ? 'Nenhuma vaga coletada para esta cidade ainda.' : 'Nenhuma notícia coletada para esta cidade ainda.'));
+      });
+    }
+    if (!achou) c.appendChild(mensagem('Nada encontrado para “' + busca.trim() + '”', 'Tente o nome de uma cidade da Zona da Mata, como Ubá ou Leopoldina.'));
+  }
+
+  /* ---------- abas ---------- */
+  function trocarAba(nova) {
+    if (ABAS.indexOf(nova) < 0) return;
+    aba = nova;
+    if (location.hash !== '#' + nova) location.hash = nova;
+    render();
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- sugestões ---------- */
+  function fecharSugestoes() {
+    $('sug').hidden = true; $('sug').textContent = '';
+    $('q').setAttribute('aria-expanded', 'false'); $('q').removeAttribute('aria-activedescendant'); sugAtiva = -1;
+  }
+  function mostrarSugestoes() {
+    var a = analisar($('q').value);
+    var pop = POPULARES.filter(function (p) { return cidades().indexOf(p) >= 0; });
+    var lista = a.termo ? cidadesQue(a.termo).slice(0, 6) : (a.alvo ? [] : pop);
+    if (!lista.length || (lista.length === 1 && norm(lista[0]) === a.termo)) { fecharSugestoes(); return; }
+    var ul = $('sug'); ul.textContent = ''; sugAtiva = -1;
+    lista.forEach(function (cid, i) {
+      var b = h('button', { type: 'button', tabindex: '-1', text: cid + ' · MG' });
+      b.addEventListener('mousedown', function (e) { e.preventDefault(); });
+      b.addEventListener('click', function () { escolher(cid); });
+      ul.appendChild(h('li', { role: 'option', id: 'sug' + i, 'data-cidade': cid }, b));
+    });
+    ul.hidden = false; $('q').setAttribute('aria-expanded', 'true');
+  }
+  function marcarSugestao(i) {
+    var its = $('sug').children; if (!its.length) return;
+    sugAtiva = (i + its.length) % its.length;
+    Array.prototype.forEach.call(its, function (li, n) { li.className = n === sugAtiva ? 'ativa' : ''; });
+    $('q').setAttribute('aria-activedescendant', 'sug' + sugAtiva);
+  }
+  function escolher(cidade) {
+    var q = $('q'), a = analisar(q.value);
+    var alvo = (a.alvo === 'vagas' || aba === 'vagas') ? 'vagas' : 'zona';
+    q.value = cidade; busca = cidade; $('limpar').hidden = false;
+    fecharSugestoes(); trocarAba(alvo);
+  }
+  // Ao digitar: cidade leva para ZONA DA MATA; "vagas ..." para VAGAS; "oferta ..." para OFERTAS.
+  function aoDigitar() {
+    busca = $('q').value; $('limpar').hidden = !busca;
+    var a = analisar(busca), alvo = aba;
+    if (a.alvo) alvo = a.alvo;
+    else if (aba === 'brasil' && a.termo && cidadesQue(a.termo).length) alvo = 'zona';
+    if (alvo !== aba) trocarAba(alvo); else render();
+    mostrarSugestoes();
+  }
+
+  /* ---------- eventos ---------- */
+  var q = $('q');
+  q.addEventListener('input', aoDigitar);
+  q.addEventListener('focus', mostrarSugestoes);
+  q.addEventListener('blur', fecharSugestoes);
+  q.addEventListener('keydown', function (e) {
+    var aberta = !$('sug').hidden;
+    if (e.key === 'ArrowDown') { e.preventDefault(); if (!aberta) mostrarSugestoes(); marcarSugestao(sugAtiva + 1); }
+    else if (e.key === 'ArrowUp' && aberta) { e.preventDefault(); marcarSugestao(sugAtiva - 1); }
+    else if (e.key === 'Escape') fecharSugestoes();
+    else if (e.key === 'Enter') {
+      var its = $('sug').children;
+      if (aberta && its.length) { e.preventDefault(); escolher(its[sugAtiva >= 0 ? sugAtiva : 0].getAttribute('data-cidade')); }
+    }
+  });
+  $('limpar').addEventListener('click', function () { q.value = ''; busca = ''; $('limpar').hidden = true; render(); q.focus(); });
+  Array.prototype.forEach.call(document.querySelectorAll('.aba'), function (b) {
+    b.addEventListener('click', function () { trocarAba(b.getAttribute('data-aba')); });
+  });
+  window.addEventListener('hashchange', function () {
+    var n = location.hash.replace('#', '');
+    if (ABAS.indexOf(n) >= 0 && n !== aba) { aba = n; render(); }
+  });
+
+  /* ---------- início ---------- */
+  var ini = location.hash.replace('#', '');
+  if (ABAS.indexOf(ini) >= 0) aba = ini;
+  renderBanners();
+  render();
+  carregar();
+  carregarClima();
+  setInterval(carregar, RECARGA_MS);          // relê o noticias.json a cada 2 minutos
+  setInterval(carregarClima, 15 * 60 * 1000);
+  setInterval(renderStatus, 30000);           // mantém "há X min" e a faixa vermelha em dia
+})();
+</script>
+</body>
+</html>
