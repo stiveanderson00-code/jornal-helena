@@ -1,0 +1,63 @@
+# Salve este arquivo em: .github/workflows/atualizar.yml
+#
+# Uma execução a cada 5 minutos, sem loop interno. A cada execução o coletor atualiza
+# a capa nacional e 5 das 25 cidades (rodízio por minuto), e faz commit só se o
+# noticias.json mudou.
+#
+# IMPORTANTE: o repositório precisa ser PÚBLICO. Em repositório público o GitHub Actions
+# não cobra os minutos de execução; em repositório privado a conta gratuita tem só
+# 2.000 minutos por mês, o que não dá para uma execução a cada 5 minutos.
+
+name: Atualizar Jornal Helena
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:        # permite rodar à mão na aba Actions
+    inputs:
+      tudo:
+        description: "Atualizar as 25 cidades de uma vez (use na primeira execução)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write           # necessário para o commit automático
+
+# Nunca duas coletas ao mesmo tempo (evita conflito no commit)
+concurrency:
+  group: jornal-helena
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Coletar
+        run: |
+          if [ "${{ inputs.tudo }}" = "true" ]; then
+            python3 atualizar.py --tudo
+          else
+            python3 atualizar.py
+          fi
+
+      - name: Commit automático se noticias.json mudou
+        run: |
+          if git diff --quiet -- noticias.json; then
+            echo "noticias.json sem mudanças, nada para commitar."
+            exit 0
+          fi
+          git config user.name "jornal-helena-bot"
+          git config user.email "jornal-helena-bot@users.noreply.github.com"
+          git add noticias.json
+          git commit -m "Atualização automática $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
